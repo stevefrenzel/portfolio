@@ -4,7 +4,7 @@ export default function Navigation() {
       <nav>
         <ul>
           <li>
-            <a href='#welcome'>Start</a>
+            <a href='#welcome'>Steve Frenzel</a>
           </li>
           <li>
             <a href='#about'>About</a>
