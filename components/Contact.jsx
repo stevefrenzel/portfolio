@@ -8,7 +8,13 @@ export default function Contact() {
         </a>
         or fill out the form below:
       </p>
-      <form name='contact' method='POST' netlify netlify-honeypot='bot-field'>
+      <form
+        name='contact'
+        method='post'
+        action='/success'
+        data-netlify='true'
+        netlify-honeypot='bot-field'
+      >
         {/* For Netlify: */}
         <input type='hidden' name='form-name' value='contact' />
         <label htmlFor='first-name'>First name:</label>
