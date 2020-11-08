@@ -16,3 +16,10 @@ section {
 p {
   line-height: 1.5;
 }
+
+mark {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
