@@ -7,7 +7,7 @@ export default function Navigation() {
             <a href='#welcome'>Steve Frenzel</a>
           </li>
           <li>
-            <a href='#about'>About</a>
+            <a href='#main'>About</a>
           </li>
           <li>
             <a href='#services'>Services</a>

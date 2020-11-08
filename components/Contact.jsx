@@ -2,6 +2,10 @@ export default function Contact() {
   return (
     <section id='contact'>
       <h2>Contact</h2>
+      <img
+        src='/illustrations/inbox-cleanup.svg'
+        alt='Ticked off letter inside envelope'
+      />
       <p>
         <a href='mailto:stevefrenzel@gmx.de?subject=Enquiry about website or app'>
           Click here to send me an e-mail{' '}
