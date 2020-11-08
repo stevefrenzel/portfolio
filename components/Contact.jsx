@@ -11,7 +11,7 @@ export default function Contact() {
       <form name='contact' method='POST' netlify netlify-honeypot='bot-field'>
         {/* For Netlify: */}
         <input type='hidden' name='form-name' value='contact' />
-        <label for='first-name'>First name:</label>
+        <label htmlFor='first-name'>First name:</label>
         <input
           className='contact-input'
           type='text'
@@ -20,7 +20,7 @@ export default function Contact() {
           placeholder='First name'
           required
         ></input>
-        <label for='last-name'>Last name:</label>
+        <label htmlFor='last-name'>Last name:</label>
         <input
           className='contact-input'
           type='text'
@@ -29,7 +29,7 @@ export default function Contact() {
           placeholder='Last name'
           required
         ></input>
-        <label for='e-mail'>E-Mail:</label>
+        <label htmlFor='e-mail'>E-Mail:</label>
         <input
           className='contact-input'
           type='email'
@@ -38,7 +38,7 @@ export default function Contact() {
           placeholder='Last name'
           required
         ></input>
-        <label for='enquiry'>Enquiry:</label>
+        <label htmlFor='enquiry'>Enquiry:</label>
         <textarea
           className='contact-input'
           id='enquiry'
