@@ -2,10 +2,55 @@ export default function Contact() {
   return (
     <section id='contact'>
       <h2>Contact</h2>
-      <p>Click the button to send me an e-mail and I will get back to you.</p>
-      <a href='mailto:stevefrenzel@gmx.de?subject=Enquiry about website or app'>
-        <button type='button'>Send E-Mail</button>
-      </a>
+      <p>
+        <a href='mailto:stevefrenzel@gmx.de?subject=Enquiry about website or app'>
+          Click here to send me an e-mail{' '}
+        </a>
+        or fill out the form below:
+      </p>
+      <form name='contact' method='POST' netlify netlify-honeypot='bot-field'>
+        {/* For Netlify: */}
+        <input type='hidden' name='form-name' value='contact' />
+        <label for='first-name'>First name:</label>
+        <input
+          className='contact-input'
+          type='text'
+          name='first-name'
+          id='first-name'
+          placeholder='First name'
+          required
+        ></input>
+        <label for='last-name'>Last name:</label>
+        <input
+          className='contact-input'
+          type='text'
+          name='last-name'
+          id='last-name'
+          placeholder='Last name'
+          required
+        ></input>
+        <label for='e-mail'>E-Mail:</label>
+        <input
+          className='contact-input'
+          type='email'
+          name='e-mail'
+          id='e-mail'
+          placeholder='Last name'
+          required
+        ></input>
+        <label for='enquiry'>Enquiry:</label>
+        <textarea
+          className='contact-input'
+          id='enquiry'
+          name='enquiry'
+          rows='5'
+          minLength='30'
+          placeholder='Enquiry'
+          required
+          spellCheck
+        ></textarea>
+        <button type='submit'>Send Enquiry</button>
+      </form>
     </section>
   );
 }
