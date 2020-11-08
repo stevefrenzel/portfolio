@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer id='footer'>
       <span>&copy; Steve Frenzel 2020</span>
       <span>GitHub & LinkedIn</span>
     </footer>
