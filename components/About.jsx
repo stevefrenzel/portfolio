@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id='about'>
+    <section id='main'>
       <h2>About me</h2>
       <p>
         I am not a web developer. At least I was not always. I also have over{' '}
@@ -12,6 +12,10 @@ export default function About() {
         them. I have also learned to <mark>plan large and small projects</mark>{' '}
         of all kinds, to execute them carefully and implement them successfully.
       </p>
+      {/* <img
+        src='/illustrations/web-developer.svg'
+        alt='Guy sitting on a table'
+      /> */}
       <p>
         <mark>Translating your vision</mark> to your customers (or visitors) is
         my main goal. In order to achieve this, I constantly educate myself to
