@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: calc(1em + 1vw);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    background-color: lightcoral;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    background-color: lightsalmon;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    background-color: lightgoldenrodyellow;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    background-color: yellowgreen;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    background-color: lightblue;
+  }
+}
+
+section {
+  padding: 0 5%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+mark {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+.perfect-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
