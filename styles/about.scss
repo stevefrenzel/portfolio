@@ -1,7 +1,19 @@
 #main {
+  width: 100vw;
+  height: auto;
+  overflow: scroll;
+  flex-direction: column;
+  word-wrap: break-word;
+
   img {
     width: 300px;
     height: auto;
-    border: 1px solid black;
+    float: right;
+    margin: 0 20px;
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      display: initial;
+    }
   }
 }
