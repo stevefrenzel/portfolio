@@ -8,34 +8,58 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: calc(1em + 1vw);
 
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    background-color: lightcoral;
-  }
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    background-color: lightsalmon;
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    background-color: lightgoldenrodyellow;
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    background-color: yellowgreen;
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    background-color: lightblue;
-  }
+  // @media only screen and (max-width: 600px) {
+  //   background-color: lightcoral;
+  // }
+  // @media only screen and (min-width: 600px) {
+  //   background-color: lightsalmon;
+  // }
+  // @media only screen and (min-width: 768px) {
+  //   background-color: lightgoldenrodyellow;
+  // }
+  // @media only screen and (min-width: 992px) {
+  //   background-color: yellowgreen;
+  // }
+  // @media only screen and (min-width: 1200px) {
+  //   background-color: lightblue;
+  // }
 }
 
 section {
   padding: 0 5%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+  }
+
+  &::before {
+    background: linear-gradient(
+      to right,
+      rgba(240, 240, 240, 0),
+      lightslategrey
+    );
+    margin-right: 4vh;
+  }
+
+  &::after {
+    background: linear-gradient(
+      to left,
+      rgba(240, 240, 240, 0),
+      lightslategrey
+    );
+    margin-left: 4vh;
+  }
 }
 
 p {
