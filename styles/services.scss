@@ -2,11 +2,22 @@
   .services-container {
     width: 100%;
     height: auto;
-    border: 1px solid #000000;
+    border: 1px solid lightslategrey;
     border-radius: 5px;
     padding: 5%;
     margin-bottom: 20px;
     flex-direction: column;
+
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      @media only screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
 
     p {
       margin-bottom: 0;
