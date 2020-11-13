@@ -14,12 +14,9 @@ export default function Home() {
       <Head>
         <title>Steve Frenzel - Web Developer</title>
       </Head>
-      {/* <Navigation /> */}
-      <Welcome />
-      <About />
+      {/* <Welcome />
+      <About /> */}
       <Services />
-      <Contact />
-      {/* <Footer /> */}
     </>
   );
 }
