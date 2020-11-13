@@ -1,15 +1,12 @@
 #main {
   width: 100vw;
   height: auto;
-  overflow: scroll;
-  flex-direction: column;
-  word-wrap: break-word;
 
   img {
     width: 300px;
     height: auto;
     float: right;
-    margin: 0 20px;
+    margin: 20px;
     display: none;
 
     @media only screen and (min-width: 768px) {
