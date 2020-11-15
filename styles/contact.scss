@@ -26,7 +26,8 @@
 
   fieldset {
     appearance: none;
-    border: 1px solid lightslategrey;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
   }
 
