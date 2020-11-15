@@ -3,7 +3,11 @@
   align-items: center;
   width: 100vw;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 120px;
+  }
 
   .wrapper {
     width: 100%;
@@ -46,12 +50,14 @@
   input,
   textarea {
     width: 100%;
-    border: none;
+    // border: none;
+    border: 1px solid lightslategrey;
     border-radius: 5px;
     padding: 10px 20px;
   }
 
-  input[type='text'] {
+  input[type='text'],
+  input[type='email'] {
     font-size: 1rem;
   }
 
