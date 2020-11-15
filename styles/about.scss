@@ -1,9 +1,14 @@
 #main {
   width: 100vw;
   height: auto;
+  margin-bottom: 60px;
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 120px;
+  }
 
   img {
-    width: 300px;
+    width: 250px;
     height: auto;
     float: right;
     margin: 20px;
@@ -12,5 +17,9 @@
     @media only screen and (min-width: 768px) {
       display: initial;
     }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
