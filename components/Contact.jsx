@@ -5,7 +5,7 @@ export default function Contact() {
         <h2>Contact</h2>
         <p>
           <a href='mailto:stevefrenzel@gmx.de?subject=Enquiry about website or app'>
-            Click here to send an e-mail{' '}
+            Click here to send me an e-mail{' '}
           </a>
           or fill out the form below:
         </p>
