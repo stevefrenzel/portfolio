@@ -1,4 +1,10 @@
 #services {
+  margin-bottom: 60px;
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 120px;
+  }
+
   .services-container {
     width: 100%;
     height: auto;
@@ -24,6 +30,10 @@
     }
   }
 
+  .services-container:last-child {
+    margin-bottom: 0;
+  }
+
   @media only screen and (min-width: 768px) {
     .services-container:nth-child(odd) {
       flex-direction: row;
@@ -45,10 +55,6 @@
 
     @media only screen and (min-width: 600px) {
       width: 250px;
-    }
-
-    @media only screen and (min-width: 768px) {
-      width: 300px;
     }
   }
 }
