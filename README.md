@@ -5,12 +5,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## To Do
 
 - [ ] Choose color theme for pictures
-- [ ] Create Breakpoints for Mobile, Table & Desktop
+- [x] Create Breakpoints for Mobile, Table & Desktop
 - [ ] Add toggle for Light & Dark Mode
 - [ ] Add animations with GSAP
 - [ ] Add meta data for SEO
 - [ ] Use ✌️ as logo
-- [ ] Use web.dev as design template
+- [x] Use web.dev as design template
 - [ ] If system language is not german, switch to english
 - [ ] Add fixed width and height to images to avoid CLS
 - [ ] Navigation disappears on scroll
