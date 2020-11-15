@@ -1,4 +1,6 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
+import '../styles/navigation.scss';
+import '../styles/menu-button.scss';
 import '../styles/welcome.scss';
 import '../styles/about.scss';
 import '../styles/services.scss';

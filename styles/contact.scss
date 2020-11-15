@@ -1,14 +1,79 @@
 #contact {
-  img {
-    width: 300px;
-    height: auto;
-    border: 1px dotted black;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 60px;
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 120px;
   }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  img {
+    width: 500px;
+    height: auto;
+    display: none;
+    margin: 130px 0 0 50px;
+    @media only screen and (min-width: 992px) {
+      display: none;
+      width: 400px;
+    }
+  }
+
+  fieldset {
+    appearance: none;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+  }
+
   label,
   button {
     display: block;
   }
+
+  label,
+  input,
+  legend {
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea,
+  button {
+    appearance: none;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    // border: none;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    font-size: 1rem;
+  }
+
   textarea {
     resize: none;
+    font-size: 1rem;
+  }
+
+  button {
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 1rem;
   }
 }
