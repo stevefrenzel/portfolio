@@ -1,12 +1,12 @@
+// Next.js
 import Head from 'next/head';
-
-import Navigation from '../components/Navigation';
-import Welcome from '../components/Welcome';
-import About from '../components/About';
-import Services from '../components/Services';
-import References from '../components/References';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+// Components
+import Intro from './Intro';
+// import Nav from './Nav';
+import Work from './Work';
+import About from './About';
+import Contact from './Contact';
+import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -14,9 +14,10 @@ export default function Home() {
       <Head>
         <title>Steve Frenzel - Web Developer</title>
       </Head>
-      <Welcome />
+      {/* <Nav /> */}
+      <Intro />
+      <Work />
       <About />
-      <Services />
       <Contact />
       <Footer />
     </>
