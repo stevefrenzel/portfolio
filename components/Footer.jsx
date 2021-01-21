@@ -1,16 +1,18 @@
 // TODO Loop through data set for social links
 // TODO Date needs to be dynamic
 
-import styles from '../styles/Footer.module.css';
+export const config = {
+  unstable_runtimeJS: false,
+};
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
+    <footer>
       <ul>
-        <li>
+        <li id='email-icon'>
           <a href='mailto:stevefrenzel@gmx.de'>E-Mail</a>
         </li>
-        <li>
+        <li id='linkedin-icon'>
           <a
             href='https://www.linkedin.com/in/stevefrenzel/'
             rel='noopener noreferrer'
@@ -18,12 +20,12 @@ export default function Footer() {
             LinkedIn
           </a>
         </li>
-        <li>
+        <li id='twitter-icon'>
           <a href='https://twitter.com/stvfrnzl' rel='noopener noreferrer'>
             Twitter
           </a>
         </li>
-        <li>
+        <li id='github-icon'>
           <a href='https://github.com/stevefrenzel' rel='noopener noreferrer'>
             GitHub
           </a>

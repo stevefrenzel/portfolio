@@ -1,25 +1,30 @@
 // Next.js
 import Head from 'next/head';
 // Components
-import Intro from './Intro';
-// import Nav from './Nav';
-import Work from './Work';
-import About from './About';
-import Contact from './Contact';
-import Footer from './Footer';
+// import Header from '@components/Header';
+import Intro from '@components/Intro';
+import Work from '@components/Work';
+import About from '@components/About';
+import Contact from '@components/Contact';
+import Footer from '@components/Footer';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Steve Frenzel - Web Developer</title>
-      </Head>
-      {/* <Nav /> */}
-      <Intro />
-      <Work />
-      <About />
-      <Contact />
-      <Footer />
+      <a href='#main'>Skip to main content</a>
+      <div className='global-container'>
+        <Head>
+          <title>Steve Frenzel - Web Developer</title>
+        </Head>
+        {/* <Header /> */}
+        <Intro />
+        <main id='main' tabIndex='-1'>
+          <Work />
+          <About />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

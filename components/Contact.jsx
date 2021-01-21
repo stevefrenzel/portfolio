@@ -2,15 +2,11 @@ export const config = {
   unstable_runtimeJS: false,
 };
 
-import styles from '../styles/Contact.module.css';
-
 export default function Contact() {
   return (
-    <section className={styles.container}>
+    <section id='contact-container'>
       <h2>Contact</h2>
-      <p>
-        If your’re interested in working with me, I’d love to hear from you!
-      </p>
+      <p>If you’re interested in working with me, I’d love to hear from you!</p>
       <form
         name='contact'
         method='post'
@@ -18,7 +14,7 @@ export default function Contact() {
         data-netlify='true'
         netlify-honeypot='bot-field'
       >
-        <label htmlFor='name'>Name</label>
+        <label htmlFor='name'>Name (required)</label>
         <input
           className='contact-input'
           type='text'
@@ -27,7 +23,7 @@ export default function Contact() {
           placeholder='Enter your name'
           required
         ></input>
-        <label htmlFor='e-mail'>E-Mail</label>
+        <label htmlFor='e-mail'>E-Mail (required)</label>
         <input
           className='contact-input'
           type='email'
@@ -36,7 +32,7 @@ export default function Contact() {
           placeholder='Enter your E-Mail'
           required
         ></input>
-        <label htmlFor='message'>Message</label>
+        <label htmlFor='message'>Message (min. 20 characters)</label>
         <textarea
           className='contact-input'
           id='message'

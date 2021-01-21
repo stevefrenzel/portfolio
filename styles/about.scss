@@ -1,0 +1,68 @@
+@mixin icon-settings {
+  background-repeat: no-repeat;
+  background-position: 1px;
+  padding-left: 1.9rem;
+}
+
+#about-container {
+  max-width: 60rem;
+  padding: 0 5%;
+  margin-bottom: 2rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    margin: 15px;
+  }
+
+  #html-icon {
+    background-image: url('/icons/html5.svg');
+    @include icon-settings();
+  }
+  #css-icon {
+    background-image: url('/icons/css3.svg');
+    @include icon-settings();
+  }
+  #javascript-icon {
+    background-image: url('/icons/javascript.svg');
+    @include icon-settings();
+  }
+  #react-icon {
+    background-image: url('/icons/react.svg');
+    @include icon-settings();
+  }
+  #vue-icon {
+    background-image: url('/icons/vue-dot-js.svg');
+    @include icon-settings();
+  }
+  #figma-icon {
+    background-image: url('/icons/figma.svg');
+    @include icon-settings();
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon {
+    width: 32px;
+    height: auto;
+  }
+}

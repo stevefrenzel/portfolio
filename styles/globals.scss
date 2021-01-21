@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/lobster-two-v13-latin-regular.eot');
+  src: local(''),
+    url('/fonts/lobster-two-v13-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/lobster-two-v13-latin-regular.woff2') format('woff2'),
+    url('/fonts/lobster-two-v13-latin-regular.woff') format('woff'),
+    url('/fonts/lobster-two-v13-latin-regular.ttf') format('truetype'),
+    url('/fonts/lobster-two-v13-latin-regular.svg#LobsterTwo') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/open-sans-v18-latin-regular.eot');
+  src: local(''),
+    url('/fonts/open-sans-v18-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/open-sans-v18-latin-regular.woff2') format('woff2'),
+    url('/fonts/open-sans-v18-latin-regular.woff') format('woff'),
+    url('/fonts/open-sans-v18-latin-regular.ttf') format('truetype'),
+    url('/fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg');
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+[href='#main'] {
+  position: absolute;
+  top: 0;
+  right: 100%;
+
+  &:focus {
+    right: auto;
+    outline: 2px dotted #000;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -3,7 +3,6 @@
 
 import Link from 'next/link';
 import Head from 'next/head';
-import styles from '../../styles/Project.module.css';
 
 export default function PersonalBlog() {
   return (
@@ -14,7 +13,7 @@ export default function PersonalBlog() {
       <Link href='/'>
         <a>GO TO START 👈</a>
       </Link>
-      <main className={styles.container}>
+      <main id='project-container'>
         <img
           src='../img/blog.jpg'
           alt='Personal blog'
