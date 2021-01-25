@@ -5,7 +5,14 @@ export const config = {
 export default function About() {
   return (
     <section id='about-container'>
-      <h2>About</h2>
+      <div className='heading-container'>
+        <h2 id='about' tabIndex='-1'>
+          About
+        </h2>
+        <a href='#about' aria-label='Link to About heading'>
+          #
+        </a>
+      </div>
       <p>
         I was not always a web developer, though. I also have over 10 years
         experience in the music industry as a sound engineer, producer and
