@@ -5,7 +5,14 @@ export const config = {
 export default function Contact() {
   return (
     <section id='contact-container'>
-      <h2>Contact</h2>
+      <div className='heading-container'>
+        <h2 id='contact' tabIndex='-1'>
+          Contact
+        </h2>
+        <a href='#contact' aria-label='Link to Contact heading'>
+          #
+        </a>
+      </div>
       <p>If you’re interested in working with me, I’d love to hear from you!</p>
       <form
         name='contact'
