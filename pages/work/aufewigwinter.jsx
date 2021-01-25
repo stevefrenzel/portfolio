@@ -1,6 +1,3 @@
-// TODO Make this a reusable component
-// TODO Loop through data file for remaining projects but ignore current one
-
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -14,21 +11,43 @@ export default function AufEwigWinter() {
         <a>GO TO START 👈</a>
       </Link>
       <main id='project-container'>
-        <img
+        {/* <img
           src='../img/winter.jpg'
           alt='AUF EWIG WINTER website'
           width='400'
           height='400'
           loading='lazy'
+        /> */}
+        <img
+          src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGRvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+          alt='A good boy'
+          loading='lazy'
         />
-        <h1>AUF EWIG WINTER</h1>
+        <div className='heading-container'>
+          <h1 id='project-name' tabIndex='-1'>
+            AUF EWIG WINTER
+          </h1>
+          <a href='#project-name' aria-label='Link to Project Name heading'>
+            #
+          </a>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <h2>Purpose &amp; goal</h2>
+        <div className='heading-container'>
+          <h2 id='purpose-and-goal' tabIndex='-1'>
+            Purpose &amp; goal
+          </h2>
+          <a
+            href='#purpose-and-goal'
+            aria-label='Link to Purpose and Goal heading'
+          >
+            #
+          </a>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -38,7 +57,14 @@ export default function AufEwigWinter() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <h2>Tech stack</h2>
+        <div className='heading-container'>
+          <h2 id='tech-stack' tabIndex='-1'>
+            Tech stack
+          </h2>
+          <a href='#tech-stack' aria-label='Link to Tech stack heading'>
+            #
+          </a>
+        </div>
         <ul>
           <li>React</li>
           <li>styled-components</li>
@@ -53,13 +79,21 @@ export default function AufEwigWinter() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <img
-          src='../img/coding.jpg'
-          alt='Laptop on a desk'
-          width='400'
-          height='400'
+          src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGRvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+          alt='A good boy'
           loading='lazy'
         />
-        <h2>Thought process</h2>
+        <div className='heading-container'>
+          <h2 id='thought-process' tabIndex='-1'>
+            Thought process
+          </h2>
+          <a
+            href='#thought-process'
+            aria-label='Link to Thought process heading'
+          >
+            #
+          </a>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -69,7 +103,17 @@ export default function AufEwigWinter() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <h2>Lessons learned</h2>
+        <div className='heading-container'>
+          <h2 id='lessons-learned' tabIndex='-1'>
+            Lessons learned
+          </h2>
+          <a
+            href='#lessons-learned'
+            aria-label='Link to Lessons learned heading'
+          >
+            #
+          </a>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -79,7 +123,14 @@ export default function AufEwigWinter() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <h3>Other projects:</h3>
+        <div className='heading-container'>
+          <h3 id='other-projects' tabIndex='-1'>
+            Other projects
+          </h3>
+          <a href='#other-projects' aria-label='Link to Other projects heading'>
+            #
+          </a>
+        </div>
         <Link href='/work/personal-blog'>
           <a>
             <figure>
