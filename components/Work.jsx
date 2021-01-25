@@ -10,7 +10,14 @@ import Link from 'next/link';
 export default function Work() {
   return (
     <section id='work-container'>
-      <h2>Work</h2>
+      <div className='heading-container'>
+        <h2 id='work' tabIndex='-1'>
+          Work
+        </h2>
+        <a href='#work' aria-label='Link to Work heading'>
+          #
+        </a>
+      </div>
       <p>
         Here you can find a selection of projects I have worked on recently.
         Click on the image to learn more!
