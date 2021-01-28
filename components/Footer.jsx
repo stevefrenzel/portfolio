@@ -1,10 +1,3 @@
-// TODO Loop through data set for social links
-// TODO Date needs to be dynamic
-
-export const config = {
-  unstable_runtimeJS: false,
-};
-
 export default function Footer() {
   return (
     <footer>
