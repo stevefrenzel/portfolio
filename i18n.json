@@ -1,0 +1,10 @@
+{
+  "locales": ["en", "de"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common"],
+    "/work/auf-ewig-winter": ["aew"],
+    "/work/portfolio-website": ["portfolio"],
+    "/work/xkcd": ["xkcd"]
+  }
+}

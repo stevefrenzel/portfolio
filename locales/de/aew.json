@@ -1,0 +1,37 @@
+{
+  "headings": {
+    "description": "Beschreibung",
+    "technologies": "Technologien",
+    "purpose-and-goal": "Zweck & Zielsetzung",
+    "tech-stack": "Verwendete Technologien",
+    "challenges-and-problems": "Herausforderungen & Probleme",
+    "conclusion": "Fazit"
+  },
+  "overview": {
+    "p-1": "<0>Zusammen mit drei Freunden habe ich Ende 2019 die Plattenfirma <1>AUF EWIG WINTER</1> gegründet, welche als Sammelstelle für alle Informationen zu unseren Künstlern aus den Bereichen Metal, Lo-Fi und Hip Hop / Rap dient. Da wir für eine professionelle Außenwirkung neben den üblichen Social Media Präsenzen auch eine eigene Website und E-Mail Adresse benötigten, habe ich mich um die Umsetzung gekümmert. Zu diesem Zeitpunkt habe ich mich viel mit <2>Vue.js</2> beschäftigt, weshalb ich diese Technologie gewählt habe. Unter anderem auch, weil es von sich aus bereits Möglichkeiten zum Routing, sowie integrierte Animationen CSS-Animationen anbot.</0>"
+  },
+  "purpose-and-goal": {
+    "p-2": "<0>Diese Website dient als offizielle Informationsquelle zu unserem Schaffen als Plattenfirma <1>AUF EWIG WINTER</1>. Neben dem digitalen und physischen Vertrieb von Musik bieten wir auch Merchandise (T-Shirts & Hoodies) an. Außerdem haben wir einen Podcast, welcher in regelmäßigen Abständen erscheint. All diese Informationen sollten möglichst einfach zu finden sein und in der entsprechenden Schwarz/Rot Ästhetik präsentiert werden. Vor allem die bereits veröffentlichte Musik und Videos sollten mit möglichst wenigen Klicks abrufbar sein.</0>"
+  },
+  "tech-stack": {
+    "p-3": "<0>Bevor ich mit dem Programmieren begonnen habe, habe ich zuerst ein Design in <1>Figma</1> entworfen, an welchem ich mich später orientiert habe. Da dies meine erstes Projekt mit diesem Programm war und ich mich damit noch nicht sehr gut auskannte, habe ich nur einen groben Entwurf für die Desktop-Variante erstellt. Bei darauffolgenden Projekten hielt ich zuerst den Aufbau schriftlich fest, um daraufhin mit dem Design für die Mobile-Variante zu beginnen. Diese Herangehensweise nennt sich <2>mobile first</2> und hat den Vorteil, dass man schnell herausfindet, welche Elemente essenziell sind und wie man diese am besten anordnet.</0>",
+    "p-4": "<0>Zur Umsetzung habe ich <1>Vue.js</1> benutzt, welches ein JavaScript Framework ist. Es hat eine relativ flache Lernkurve, vor allem, da ich bereits Erfahrung mit <2>React</2> sammeln konnte. Dank <3>Vue Router</3> war das Erstellen separater Seiten für die Künstler sehr einfach, für welche ich mehrere wiederverwendbare Komponenten erstellt habe, um dem DRY-Prinzip zu folgen. Zum Beispiel eine Komponente, welche pro Veröffentlichung den jeweiligen Spotify Player und die Verfügbarkeit auf anderen Streamingplattformen darstellt.</0>"
+  },
+  "challenges-and-problems": {
+    "p-5": "<0>Eine der größten Herausforderungen bei diesem Projekt war für mich, die Dateigröße der finalen Website so gut es ging zu verringern. Auch hier hatte <1>Vue.js</1> wieder eine interne Lösung parat, nämlich das <2>lazy loading</2> von Komponenten. In der Praxis bedeutet es, dass zum Beispiel die Künstlerseiten erst geladen werden, wenn man sie auswählt. Eine weitere Herausforderung war das bereitstellen der Website durch <3>Netlify</3>. Es ist generell sehr einfach mit diesem Dienst, aber ein bisschen komplizierter, sobald die Domain nicht direkt von <4>Netlify</4> kommt, sondern in diesem Fall von <5>Strato</5>.</0>",
+    "p-6": "<0>Nachdem das geklappt hatte, ist allerdings ein anderes Problem aufgetaucht: Wollte man direkt zu einer der Unterseiten navigieren (zum Beispiel <1>aufewigwinter.de/kora-winter</1>), sah man eine 404-Seite, da der Redirect fehlschlug. Dies konnte ich beheben, indem ich eine entsprechende netlify.toml erstellt habe. Diese Datei wird von <2>Netlify</2> beim Bereitstellungsprozess bevorzugt behandelt und teilt ihnen mit, dass bei der Weiterleitung zur jeweiligen index.html weitergeleitet und ein Statuscode 200 gesendet wird.</0>",
+    "p-7": "Die letzte große Herausforderung war das Erstellen einiger wiederverwendbarer Komponenten, da ich in Zukunft neue Inhalte schnell und einfach hinzufügen wollte, ohne mehrere Stellen der Anwendung bearbeiten zu müssen. Diese Komponenten sind sozusagen Schablonen mit fertiger Struktur, Logik und Styling, die ich nur an wenigen Stellen mit den entsprechenden Informationen versorgen muss. Am Ende sind es fünf Stück geworden, die teilweise ineinander verschachtelt sind:"
+  },
+  "conclusion": {
+    "bullet-points": {
+      "bp-1": "<0>nicht auf einen Blick klar ist, was <1>AUF EWIG WINTER</1> überhaupt ist</0>",
+      "bp-2": "es zu wenig Information über die Plattenfirma selbst und die Künstler gibt",
+      "bp-3": "Benutzer müssen sich erst durchklicken, um zu den Inhalten zu gelangen",
+      "bp-4": "<0>Kurzbeschreibung von <1>AUF EWIG WINTER</1> auf der Startseite, sowie die aktuellste Veröffentlichung zum anhören und ansehen</0>",
+      "bp-5": "Automatische Spracherkennung und manuelle Sprachauswahl möglich (Englisch und Deutsch)",
+      "bp-6": "Künstlerseiten werden mehr Infos über den Künstler, sowie über die Veröffentlichungen enthalten"
+    },
+    "p-8": "<0>Dank diesem Projekt konnte ich sehr viel über <1>Vue.js</1> und <2>Netlify</2> lernen und wie ich die beiden Technologien für die Produktion optimieren kann. Leider bin ich mit dieser Version der Website nicht zu 100% zufrieden, was vor allem mit der Struktur zusammen hängt. Meine größten Kritikpunkte sind, dass</0>",
+    "p-9": "<0>Aus diesem Grund werde ich eine überarbeitete Variante mit <1>Next.js</1> erstellen, da es sehr benutzerfreundlich für Entwickler ist, sehr viele sinnvollen Funktionen hat und es statisch generierte HTML-Dateien erzeugt. Dass bedeutet in der Praxis, dass die empfunde Geschwindigkeit bei Benutzern höher ist und die Dateigrößen geringer ausfallen. Folgende strukturelle Änderungen werde ich vornehmen:</0>"
+  }
+}
