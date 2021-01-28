@@ -1,43 +1,40 @@
-#intro-container {
-  margin: 2rem 0 1rem 0;
-  max-width: 60rem;
+#intro-wrapper {
+  margin: 120px auto 1rem auto;
   padding: 0 5%;
-  margin-bottom: 2rem;
+  max-width: 40rem;
 
-  img {
-    max-width: 100%;
-    height: auto;
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 5px;
-    margin: 0 auto;
-    object-fit: contain;
+  .image-and-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
-  .text-container {
-    h1 {
-      margin-top: 1rem;
-      text-align: center;
-    }
+  .image-wrapper {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
 
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
+    img {
+      border-radius: 5px;
     }
+  }
 
-    p {
-      margin-bottom: 1rem;
-    }
+  .heading-wrapper {
+    margin: 0 auto;
+  }
 
-    a {
-      transition: 0.2s ease-in-out;
-    }
+  h1,
+  h2 {
+    text-align: center;
+  }
 
-    a:hover,
-    a:active,
-    a:focus {
-      // outline: 3px solid #000;
-      // transition: 0.2s ease-in-out;
-    }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
 }
