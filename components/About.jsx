@@ -1,30 +1,23 @@
-export const config = {
-  unstable_runtimeJS: false,
-};
+import useTranslation from 'next-translate/useTranslation';
 
 export default function About() {
+  const { t } = useTranslation('common');
+  const heading = t('headings.about');
+  const paragraphOne = t('content.about.p1');
+  const paragraphTwo = t('content.about.p2');
+
   return (
     <section id='about-container'>
       <div className='heading-container'>
         <h2 id='about' tabIndex='-1'>
-          About
+          {heading}
         </h2>
         <a href='#about' aria-label='Link to About heading'>
           #
         </a>
       </div>
-      <p>
-        I was not always a web developer, though. I also have over 10 years
-        experience in the music industry as a sound engineer, producer and
-        stagehand. During this time I met many different people and learned to
-        respond to their individual needs.{' '}
-      </p>
-      <p>
-        I constantly educate myself to be able to decide which technology will
-        best fit your project. The result will be an intuitive, performant and
-        easily accessible product, taking current development best practices
-        into account. These are some of the technologies I am familiar with:
-      </p>
+      <p>{paragraphOne}</p>
+      <p>{paragraphTwo}</p>
       <ul>
         <li id='html-icon'>HTML</li>
         <li id='css-icon'>CSS</li>
