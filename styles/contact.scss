@@ -1,7 +1,7 @@
 #contact-container {
-  max-width: 60rem;
+  max-width: 40rem;
   padding: 0 5%;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
 
   p {
     margin-bottom: 1rem;
@@ -26,7 +26,10 @@
     padding: 10px;
     transition: 0.2s ease-in-out;
 
-    &:focus {
+    &:focus,
+    &:hover,
+    &:active {
+      cursor: pointer;
       box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
       outline: none;
       border: 1px solid #000;
