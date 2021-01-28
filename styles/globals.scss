@@ -29,16 +29,23 @@
 html {
   font-size: calc(1em + 1vw);
   font-family: 'Merriweather', serif;
+  // filter: invert(1) hue-rotate(180deg);
+  // background: #fff;
+  // color: #000;
 }
 
 [href='#main'] {
   position: absolute;
-  top: 0;
+  top: 8px;
+  margin-left: 8px;
   right: 100%;
+  z-index: 666;
 
   &:focus {
     right: auto;
-    outline: 2px dotted #000;
+    // outline: 2px dotted #000;
+    background: blue;
+    color: #fff;
   }
 }
 
@@ -59,12 +66,35 @@ h3 {
   font-size: 1.5rem;
 }
 
+a {
+  transition: 0.2s ease-in-out;
+}
+
+a:visited,
+a:link {
+  color: blue;
+}
+
+a:hover,
+a:active,
+a:focus {
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
+
 .heading-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+  text-align: center;
+  // background: blue;
 
   h1:focus,
   h2:focus,
@@ -72,16 +102,28 @@ h3 {
     outline: none;
   }
 
-  a {
-    margin-left: 1rem;
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
     font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
 
-    &:visited,
+  a {
+    padding: 1%;
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: #000;
+    }
+
     &:hover,
     &:active,
-    &:focus,
-    &:link {
-      color: #000;
+    &:focus {
+      color: #fff;
     }
   }
 }
