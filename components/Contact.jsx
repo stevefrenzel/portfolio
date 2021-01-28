@@ -1,19 +1,28 @@
-export const config = {
-  unstable_runtimeJS: false,
-};
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Contact() {
+  const { t } = useTranslation('common');
+  const heading = t('headings.contact');
+  const description = t('content.contact');
+  const labelName = t('labels.name');
+  const placeholderName = t('placeholders.name');
+  const labelEmail = t('labels.email');
+  const placeholderEmail = t('placeholders.email');
+  const labelMessage = t('labels.message');
+  const placeholderMessage = t('placeholders.message');
+  const submitButton = t('submit-button');
+
   return (
     <section id='contact-container'>
       <div className='heading-container'>
         <h2 id='contact' tabIndex='-1'>
-          Contact
+          {heading}
         </h2>
         <a href='#contact' aria-label='Link to Contact heading'>
           #
         </a>
       </div>
-      <p>If you’re interested in working with me, I’d love to hear from you!</p>
+      <p>{description}</p>
       <form
         name='contact'
         method='post'
@@ -21,36 +30,36 @@ export default function Contact() {
         data-netlify='true'
         netlify-honeypot='bot-field'
       >
-        <label htmlFor='name'>Name (required)</label>
+        <label htmlFor='name'>{labelName}</label>
         <input
           className='contact-input'
           type='text'
           name='name'
           id='name'
-          placeholder='Enter your name'
+          placeholder={placeholderName}
           required
         ></input>
-        <label htmlFor='e-mail'>E-Mail (required)</label>
+        <label htmlFor='e-mail'>{labelEmail}</label>
         <input
           className='contact-input'
           type='email'
           name='e-mail'
           id='e-mail'
-          placeholder='Enter your E-Mail'
+          placeholder={placeholderEmail}
           required
         ></input>
-        <label htmlFor='message'>Message (min. 20 characters)</label>
+        <label htmlFor='message'>{labelMessage}</label>
         <textarea
           className='contact-input'
           id='message'
           name='message'
           rows='5'
           minLength='20'
-          placeholder='Enter your message'
+          placeholder={placeholderMessage}
           required
           spellCheck
         ></textarea>
-        <button type='submit'>Send</button>
+        <button type='submit'>{submitButton}</button>
       </form>
     </section>
   );
