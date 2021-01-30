@@ -3,8 +3,9 @@ import useTranslation from 'next-translate/useTranslation';
 export default function About() {
   const { t } = useTranslation('common');
   const heading = t('headings.about');
-  const paragraphOne = t('content.about.p1');
-  const paragraphTwo = t('content.about.p2');
+  const p1 = t('content.about.p-1');
+  const p2 = t('content.about.p-2');
+  const p3 = t('content.about.p-3');
 
   return (
     <section id='about-container'>
@@ -16,8 +17,8 @@ export default function About() {
           #
         </a>
       </div>
-      <p>{paragraphOne}</p>
-      <p>{paragraphTwo}</p>
+      <p>{p1}</p>
+      <p>{p2}</p>
       <ul>
         <li id='html-icon'>HTML</li>
         <li id='css-icon'>CSS</li>
@@ -26,11 +27,13 @@ export default function About() {
         <li id='vue-icon'>Vue.js</li>
         <li id='figma-icon'>Figma</li>
       </ul>
-      {/* <p>
-        Outside of programming, I'm also very interested in music, hot sauces,
-        dogs, and am always looking for delicious vegan cooking recipes (if you
-        have any contact me)!
-      </p> */}
+      <p>{p3}</p>
+      <ul>
+        <li id='chrome-icon'>Google Chrome</li>
+        <li id='firefox-icon'>Firefox</li>
+        <li id='safari-icon'>Safari</li>
+        <li id='edge-icon'>Microsoft Edge</li>
+      </ul>
     </section>
   );
 }
