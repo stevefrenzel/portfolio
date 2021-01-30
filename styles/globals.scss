@@ -29,9 +29,6 @@
 html {
   font-size: calc(1em + 1vw);
   font-family: 'Merriweather', serif;
-  // filter: invert(1) hue-rotate(180deg);
-  // background: #fff;
-  // color: #000;
 }
 
 [href='#main'] {
@@ -43,7 +40,6 @@ html {
 
   &:focus {
     right: auto;
-    // outline: 2px dotted #000;
     background: blue;
     color: #fff;
   }
