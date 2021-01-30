@@ -22,7 +22,7 @@ export default function Work() {
       <p>{description}</p>
 
       <div className='gallery'>
-        <Link href='/work/auf-ewig-winter'>
+        <Link href='/work/auf-ewig-winter' scroll={false}>
           <a>
             <Image
               src='/img/winter.jpg'
@@ -32,7 +32,7 @@ export default function Work() {
             />
           </a>
         </Link>
-        <Link href='/work/portfolio-website'>
+        <Link href='/work/xkcd' scroll={false}>
           <a>
             <div className='image-wrapper'></div>
             <Image
@@ -43,7 +43,7 @@ export default function Work() {
             />
           </a>
         </Link>
-        <Link href='/work/personal-blog'>
+        <Link href='/work/portfolio-website' scroll={false}>
           <a>
             <div className='image-wrapper'></div>
             <Image
