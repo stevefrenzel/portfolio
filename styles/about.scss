@@ -10,7 +10,7 @@
   margin: 0 auto 2rem auto;
 
   p {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   ul {
@@ -51,14 +51,20 @@
     background-image: url('/icons/figma.svg');
     @include icon-settings();
   }
-
-  img {
-    margin: 0;
-    padding: 0;
+  #chrome-icon {
+    background-image: url('/icons/chrome.svg');
+    @include icon-settings();
   }
-
-  .icon {
-    width: 32px;
-    height: auto;
+  #firefox-icon {
+    background-image: url('/icons/firefox.svg');
+    @include icon-settings();
+  }
+  #safari-icon {
+    background-image: url('/icons/safari.svg');
+    @include icon-settings();
+  }
+  #edge-icon {
+    background-image: url('/icons/edge.svg');
+    @include icon-settings();
   }
 }
