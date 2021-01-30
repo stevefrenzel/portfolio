@@ -40,7 +40,7 @@ export default function AufEwigWinter() {
           <h1 id='project-name' tabIndex='-1'>
             AUF EWIG WINTER
           </h1>
-          <a href='#project-name' aria-label='Link to Project Name heading'>
+          <a href='#project-name' aria-label='Link to AUF EWIG WINTER heading'>
             #
           </a>
         </div>
@@ -92,7 +92,7 @@ export default function AufEwigWinter() {
             </li>
           </ul>
         </ul>
-        <main className='' id='main'>
+        <main id='main'>
           <Trans
             i18nKey='aew:overview.p-1'
             components={[<Paragraph />, <mark />, <mark />]}
