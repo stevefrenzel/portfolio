@@ -7,7 +7,6 @@ import Trans from 'next-translate/Trans';
 export default function Intro() {
   const { t } = useTranslation('common');
   const jobTitle = t('headings.intro');
-  const description = t('content.intro');
   const Component = (props) => <p {...props} />;
 
   return (
