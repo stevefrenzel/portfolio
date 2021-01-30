@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <nav role='banner'>
-        <Link href='/'>
+        <Link href='/' scroll={false}>
           <a>🏚 Home</a>
         </Link>
         {router.locales.map((language) => (
