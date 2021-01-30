@@ -1,0 +1,41 @@
+{
+  "headings": {
+    "description": "Description",
+    "technologies": "Tech Stack",
+    "purpose-and-goal": "Purpose & Goal",
+    "tech-stack": "Tech Stack",
+    "challenges-and-problems": "Challenges & Problems",
+    "conclusion": "Conclusion"
+  },
+
+  "overview": {
+    "p-1": "<0>This project is special because I didn't write a single line of code! I wanted to get better with the design tool <1>Figma</1>, yet not just follow a tutorial, but build a real project. What inspired me to do this was this video by <2>AJ&Smart</2>: <3>Figma UI Design Tutorial: Get Started in Just 24 Minutes! (2021)</3>. In it, he not only explains <4>Figma</4> itself, but also says that the best way to learn is by recreating other websites / applications. For this reason, I decided to do a redesign of the <5>xkcd website</5> by book author <6>Randall Munroe</6>, as I am a big fan of his books <7>What If</7> and <8>How To</8>.</0>",
+    "bullet-points": {
+      "bp-1": "Design revision for website",
+      "bp-2": "Not available"
+    }
+  },
+  "purpose-and-goal": {
+    "p-2": "<0>I noticed more and more often that I took a long time when trying out the structure and styling of a website / application, because I first had to write the corresponding code and CSS for it. A quick design was rarely possible when it came to less trivial things like rearranging multiple components. After a little research, I came across <1>Figma</1>, which is a very popular and flexible design tool, even as a free version.</0>",
+    "p-3": "<0>With this, I was able to create <1>wireframes</1> within a short time, in which I tested, for example, the placement of components or fonts via drag & drop. The next step was to create a <2>prototype</2> from the wireframe, so that you can, for instance, open a menu by clicking.</0>",
+    "p-4": "<0>But since I wanted to improve my skills with a \"real\" project, I had decided to do a redesign of the <1>xkcd</1> website. This one is a bit stuck in time (in my opinion) from the technical and aesthetic aspect. My goal was to radically simplify the design, improve the user experience, but also stay true to the style of <2>Randall Munroe</2>.</0>"
+  },
+  "tech-stack": {
+    "p-5": "<0>Since I only used <1>Figma</1> for this project, I will go into a few techniques that I used in this design tool. Among other things, I learned to divide the project into so-called \"pages\":</0>",
+    "p-6": "In the first one I wrote down the rough structure and all the texts I wanted to include. The second one contained all the images and icons I wanted to use. Then I started with the mobile version, as it was easier to determine which elements were essential for the website and how I could arrange them in a user-friendly way.",
+    "p-7": "Based on this, the creation of the tablet version went quite quickly. Depending on the complexity of a project, it may be necessary to create a prototype for the desktop version as well. But not in this case, as there were no major changes from tablet to desktop.",
+    "bullet-points": {
+      "bp-3": "Content",
+      "bp-4": "Assets",
+      "bp-5": "Mobile version",
+      "bp-6": "Tablet version"
+    }
+  },
+  "challenges-and-problems": {
+    "p-8": "<0><1>Figma</1> is a very user-friendly application, so I hardly encountered any problems or challenges with it. The most difficult thing was to create a design that on the one hand respects the conventions of current web applications, but on the other hand stays true to the character of the original website. For this reason, I decided on a simple black and white design, as it offered the best contrast ratio and gave the style of the stick figure drawings a fitting framework.</0>",
+    "p-9": "In addition, it was important for me to focus on the horizontal image gallery, as this should form the heart of his work. Also the buttons are kept in the style of the original design to honour it in a certain way."
+  },
+  "conclusion": {
+    "p-10": "<0>Not only did I have a lot of fun with this project, but I also achieved my personal goal of getting to know <1>Figma</1> better. At least to the point where I felt confident enough to make designs. There is still a lot of room for improvement in my workflow, but the more I use it, the better I will get at using this tool. Also, it was very refreshing not to write code for a change! 😅</0>"
+  }
+}
