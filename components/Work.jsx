@@ -1,6 +1,5 @@
 // Next.js
 import Link from 'next/link';
-import Image from 'next/image';
 // i18n
 import useTranslation from 'next-translate/useTranslation';
 
@@ -20,41 +19,23 @@ export default function Work() {
         </a>
       </div>
       <p>{description}</p>
-
-      <div className='gallery'>
-        <Link href='/work/auf-ewig-winter' scroll={false}>
-          <a>
-            <Image
-              src='/img/winter.jpg'
-              alt='AUF EWIG WINTER website'
-              width='400'
-              height='400'
-            />
-          </a>
-        </Link>
-        <Link href='/work/xkcd' scroll={false}>
-          <a>
-            <div className='image-wrapper'></div>
-            <Image
-              src='/img/portfolio.jpg'
-              alt='Portfolio website'
-              width='400'
-              height='400'
-            />
-          </a>
-        </Link>
-        <Link href='/work/portfolio-website' scroll={false}>
-          <a>
-            <div className='image-wrapper'></div>
-            <Image
-              src='/img/blog.jpg'
-              alt='Personal blog'
-              width='400'
-              height='400'
-            />
-          </a>
-        </Link>
-      </div>
+      <ul>
+        <li>
+          <Link href='/work/auf-ewig-winter' scroll={false}>
+            <a>AUF EWIG WINTER</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='/work/xkcd' scroll={false}>
+            <a>xkcd </a>
+          </Link>
+        </li>
+        {/* <li>
+          <Link href='/work/portfolio-website' scroll={false}>
+            <a>Portfolio website</a>
+          </Link>
+        </li> */}
+      </ul>
     </section>
   );
 }
