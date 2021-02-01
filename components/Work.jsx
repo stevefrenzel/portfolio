@@ -21,12 +21,12 @@ export default function Work() {
       <p>{description}</p>
       <ul>
         <li>
-          <Link href='/work/auf-ewig-winter' scroll={false}>
+          <Link href='/work/auf-ewig-winter'>
             <a>AUF EWIG WINTER</a>
           </Link>
         </li>
         <li>
-          <Link href='/work/xkcd' scroll={false}>
+          <Link href='/work/xkcd'>
             <a>xkcd </a>
           </Link>
         </li>
