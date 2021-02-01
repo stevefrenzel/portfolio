@@ -31,6 +31,72 @@ html {
   font-family: 'Merriweather', serif;
 }
 
+html,
+body {
+  color: #000;
+  background: #fff;
+}
+
+// Dark mode properties:
+
+[data-theme='dark'],
+[data-theme='dark'] body {
+  color: #fff;
+  background: #121212;
+
+  a {
+    color: lightpink;
+
+    &:hover {
+      background: #fff;
+      color: #121212;
+    }
+  }
+
+  .heading-container {
+    a {
+      color: #fff;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  #figma-icon {
+    background-image: url('/icons/figma-light.svg') !important;
+  }
+  #safari-icon {
+    background-image: url('/icons/safari-light.svg') !important;
+  }
+  #email-icon {
+    background-image: url('/icons/email-light.svg') !important;
+  }
+  #linkedin-icon {
+    background-image: url('/icons/linkedin-light.svg') !important;
+  }
+  #twitter-icon {
+    background-image: url('/icons/twitter-light.svg') !important;
+  }
+  #github-icon {
+    background-image: url('/icons/github-light.svg') !important;
+  }
+  #fontawesome-icon {
+    background-image: url('/icons/fontawesome-light.svg') !important;
+  }
+
+  #contact-container {
+    button,
+    input,
+    textarea {
+      filter: invert(1);
+    }
+  }
+}
+
+// Skip link:
+
 [href='#main'] {
   position: absolute;
   top: 8px;
@@ -90,7 +156,6 @@ a:focus {
   align-items: center;
   margin-bottom: 1rem;
   text-align: center;
-  // background: blue;
 
   h1:focus,
   h2:focus,
