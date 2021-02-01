@@ -1,3 +1,5 @@
+// next-theme
+import { ThemeProvider } from 'next-themes';
 // CSS
 import '@styles/globals.scss';
 import '@styles/reset.css';
@@ -11,7 +13,11 @@ import '@styles/contact.scss';
 import '@styles/footer.scss';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
 export default MyApp;
