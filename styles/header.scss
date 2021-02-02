@@ -3,34 +3,50 @@ header {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
-  display: grid;
-  place-items: center;
+  background: #fff;
 
   nav {
-    background: #fff;
-    height: 2rem;
-    width: 35rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
+    height: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 5%;
 
-  button {
-    appearance: none;
-    background: none;
-    border: none;
-  }
+    .flex-item {
+      flex: 1;
+    }
 
-  select {
-    appearance: none;
-    background: none;
-    border: none;
-  }
+    a {
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
 
-  a {
-    padding: 0 2px;
-    display: inline;
+      &:visited,
+      &:link {
+        color: #000;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+      }
+    }
+
+    select,
+    button {
+      appearance: none;
+      background: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 1%;
+      cursor: pointer;
+    }
+
+    button {
+      margin-right: 5%;
+    }
   }
 }
