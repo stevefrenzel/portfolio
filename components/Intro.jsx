@@ -11,7 +11,6 @@ export default function Intro() {
   const jobTitle = t('headings.intro');
   const Component = (props) => <p {...props} />;
   const { theme } = useTheme();
-  console.log(theme);
   return (
     <section id='intro-wrapper'>
       <div className='image-and-text'>
