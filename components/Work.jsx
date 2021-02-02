@@ -14,9 +14,9 @@ export default function Work() {
         <h2 id='work' tabIndex='-1'>
           {heading}
         </h2>
-        <a href='#work' aria-label='Link to Work heading'>
+        {/* <a href='#work' aria-label='Link to Work heading'>
           #
-        </a>
+        </a> */}
       </div>
       <p>{description}</p>
       <ul>
