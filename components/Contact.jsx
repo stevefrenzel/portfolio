@@ -18,9 +18,9 @@ export default function Contact() {
         <h2 id='contact' tabIndex='-1'>
           {heading}
         </h2>
-        <a href='#contact' aria-label='Link to Contact heading'>
+        {/* <a href='#contact' aria-label='Link to Contact heading'>
           #
-        </a>
+        </a> */}
       </div>
       <p>{description}</p>
       <form
