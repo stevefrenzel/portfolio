@@ -13,9 +13,9 @@ export default function About() {
         <h2 id='about' tabIndex='-1'>
           {heading}
         </h2>
-        <a href='#about' aria-label='Link to About heading'>
+        {/* <a href='#about' aria-label='Link to About heading'>
           #
-        </a>
+        </a> */}
       </div>
       <p>{p1}</p>
       <p>{p2}</p>
