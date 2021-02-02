@@ -12,14 +12,18 @@ export default function Header() {
       scroll: false,
     });
   };
+
   return (
     <header>
-      <nav role='banner'>
+      <nav role='banner' id='navbar'>
         <Link href='/' scroll={false}>
           <a>✌️ SF</a>
         </Link>
 
+        <div className='flex-item'></div>
+
         <button
+          aria-label='Button to switch themes'
           type='button'
           onClick={
             theme === 'dark'
@@ -35,7 +39,7 @@ export default function Header() {
         <select name='languages' id='language-select' onChange={onSelectChange}>
           {router.locales.map((language) => (
             <option value={language} key={language}>
-              {language === 'en' ? '🇺🇸 EN' : language === 'de' ? '🇩🇪 DE' : null}
+              {language === 'en' ? 'EN' : language === 'de' ? 'DE' : null}
             </option>
           ))}
         </select>
