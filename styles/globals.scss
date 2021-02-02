@@ -44,6 +44,17 @@ body {
   color: #fff;
   background: #121212;
 
+  header {
+    background: #121212;
+
+    nav {
+      a,
+      select {
+        color: #fff;
+      }
+    }
+  }
+
   a {
     color: lightpink;
 
