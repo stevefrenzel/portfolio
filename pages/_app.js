@@ -14,7 +14,7 @@ import '@styles/footer.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultTheme='system'>
       <Component {...pageProps} />
     </ThemeProvider>
   );
