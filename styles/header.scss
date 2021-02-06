@@ -39,14 +39,19 @@ header {
     button {
       appearance: none;
       background: none;
-      border: none;
+      border: 1px solid lightgray;
       border-radius: 5px;
       padding: 0 1%;
       cursor: pointer;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        border: 1px solid #000;
+      }
     }
 
     button {
-      margin-right: 5%;
+      margin-right: 3%;
     }
   }
 }
