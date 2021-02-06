@@ -52,6 +52,13 @@ body {
       select {
         color: #fff;
       }
+
+      select,
+      button {
+        &:hover {
+          border: 1px solid #fff;
+        }
+      }
     }
   }
 
