@@ -1,8 +1,7 @@
 // Next.js
 import { useRouter } from 'next/router';
 // next-seo
-import { DefaultSeo } from 'next-seo';
-import SEO from '../next-seo.config';
+import { NextSeo } from 'next-seo';
 // Components
 import Header from '@components/Header';
 import Intro from '@components/Intro';
@@ -15,12 +14,20 @@ export default function Home() {
   const router = useRouter();
   return (
     <>
-      <DefaultSeo
-        {...SEO}
+      <NextSeo
         title='Steve Frenzel - Web Developer'
-        description='Web developer focused on frontend, accessibility and SEO.'
-        openGraph={{ locale: router.locale }}
-        canonical='https://www.stevefrenzel.dev/'
+        description='Web developer focused on frontend, accessibility, SEO and performance'
+        canonical={router.asPath}
+        openGraph={{
+          url: router.asPath,
+          type: 'website',
+          title: 'Steve Frenzel - Web Developer',
+          description:
+            'Web developer focused on frontend, accessibility, SEO and performance',
+          locale: router.locale,
+          site_name: 'stevefrenzel.dev',
+        }}
+        twitter={{ site: '@stvfrnzl', handle: '@stvfrnzl' }}
       />
       <a href='#main'>Skip to main content</a>
       <Header />
