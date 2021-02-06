@@ -1,6 +1,8 @@
 // Next.js
-import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+// next-seo
+import { NextSeo } from 'next-seo';
 // i18n
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
@@ -8,6 +10,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Header from '@components/Header';
 
 export default function AufEwigWinter() {
+  const router = useRouter();
   const Paragraph = (props) => <p {...props} />;
   const BulletPoint = (props) => <li {...props} />;
   const { t } = useTranslation('aew');
@@ -23,9 +26,20 @@ export default function AufEwigWinter() {
 
   return (
     <>
-      <Head>
-        <title>Steve Frenzel - Web Developer | AUF EWIG WINTER</title>
-      </Head>
+      <NextSeo
+        title='Steve Frenzel - Web Developer | AUF EWIG WINTER'
+        description='Website for german record label'
+        canonical={router.asPath}
+        openGraph={{
+          url: router.asPath,
+          type: 'website',
+          title: 'Steve Frenzel - Web Developer | AUF EWIG WINTER',
+          description: 'Website for german record label',
+          locale: router.locale,
+          site_name: 'stevefrenzel.dev',
+        }}
+        twitter={{ site: '@stvfrnzl', handle: '@stvfrnzl' }}
+      />
       <a href='#main'>Skip to main content</a>
       <Header />
       <div id='project-container'>
