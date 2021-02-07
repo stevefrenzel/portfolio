@@ -26,5 +26,11 @@
     "email": "E-Mail eingeben",
     "message": "Nachricht eingeben"
   },
-  "submit-button": "Senden"
+  "submit-button": {
+    "submit": "Senden",
+    "submitted": "Versendet",
+    "submitting": "Wird gesendet...",
+    "success": "Vielen Dank, deine Nachricht wurde verschickt!"
+  },
+  "select-language": "Sprache auswählen"
 }
