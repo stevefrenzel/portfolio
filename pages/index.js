@@ -17,7 +17,7 @@ export default function Home() {
       <NextSeo
         title='Steve Frenzel - Web Developer'
         description='Web developer focused on frontend, accessibility, SEO and performance'
-        canonical={router.asPath}
+        canonical='https://stevefrenzel.dev/'
         openGraph={{
           url: router.asPath,
           type: 'website',
