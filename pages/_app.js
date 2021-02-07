@@ -1,5 +1,3 @@
-// next-theme
-// import { ThemeProvider } from 'next-themes';
 // CSS
 import '@styles/globals.scss';
 import '@styles/reset.css';
