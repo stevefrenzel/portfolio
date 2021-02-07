@@ -37,7 +37,7 @@ export default function Xkcd() {
       <NextSeo
         title='Steve Frenzel - Web Developer | xkcd'
         description='Redesign of xkcd website with Figma'
-        canonical={router.asPath}
+        // canonical={router.asPath}
         openGraph={{
           url: router.asPath,
           type: 'website',
