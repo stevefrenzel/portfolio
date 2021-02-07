@@ -62,9 +62,11 @@ export default function Xkcd() {
           <h1 id='project-name' tabIndex='-1'>
             xkcd
           </h1>
-          {/* <a href='#project-name' aria-label='Link to xkcd heading'>
-            #
-          </a> */}
+          <a href='#project-name' aria-label='Link to xkcd heading'>
+            <span role='img' aria-label='link symbol'>
+              🔗
+            </span>
+          </a>
         </div>
         <ul id='overview'>
           <li>{description}</li>
@@ -128,12 +130,14 @@ export default function Xkcd() {
             <h2 id='purpose-and-goal' tabIndex='-1'>
               {purposeAndGoal}
             </h2>
-            {/* <a
+            <a
               href='#purpose-and-goal'
               aria-label='Link to Purpose and Goal heading'
             >
-              #
-            </a> */}
+              <span role='img' aria-label='link symbol'>
+                🔗
+              </span>
+            </a>
           </div>
           <Trans
             i18nKey='xkcd:purpose-and-goal.p-2'
@@ -151,9 +155,11 @@ export default function Xkcd() {
             <h2 id='tech-stack' tabIndex='-1'>
               {techStack}
             </h2>
-            {/* <a href='#tech-stack' aria-label='Link to Tech stack heading'>
-              #
-            </a> */}
+            <a href='#tech-stack' aria-label='Link to Tech stack heading'>
+              <span role='img' aria-label='link symbol'>
+                🔗
+              </span>
+            </a>
           </div>
           <Trans
             i18nKey='xkcd:tech-stack.p-5'
@@ -178,12 +184,14 @@ export default function Xkcd() {
             <h2 id='challenges-and-problems' tabIndex='-1'>
               {challengesAndProblems}
             </h2>
-            {/* <a
+            <a
               href='#challenges-and-problems'
               aria-label='Link to Challenges &amp; Problems heading'
             >
-              #
-            </a> */}
+              <span role='img' aria-label='link symbol'>
+                🔗
+              </span>
+            </a>
           </div>
           <Trans
             i18nKey='xkcd:challenges-and-problems.p-8'
@@ -194,9 +202,11 @@ export default function Xkcd() {
             <h2 id='conclusion' tabIndex='-1'>
               {conclusion}
             </h2>
-            {/* <a href='#conclusion' aria-label='Link to Conclusion heading'>
-              #
-            </a> */}
+            <a href='#conclusion' aria-label='Link to Conclusion heading'>
+              <span role='img' aria-label='link symbol'>
+                🔗
+              </span>
+            </a>
           </div>
           <Trans
             i18nKey='xkcd:conclusion.p-10'
