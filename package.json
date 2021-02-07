@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "10.0.5",
     "next-seo": "^4.19.0",
     "next-themes": "0.0.10",
