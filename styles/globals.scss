@@ -194,18 +194,18 @@ a:focus {
   }
 
   a {
-    padding: 1%;
+    padding: 0 1%;
     text-decoration: none;
     &:link,
     &:visited {
       color: #000;
     }
 
-    &:hover,
-    &:active,
-    &:focus {
-      color: #fff;
-    }
+    // &:hover,
+    // &:active,
+    // &:focus {
+    //   color: #fff;
+    // }
   }
 }
 
