@@ -1,4 +1,5 @@
 @font-face {
+  font-display: swap;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
@@ -13,6 +14,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -39,79 +41,79 @@ body {
 
 // Dark mode properties:
 
-[data-theme='dark'],
-[data-theme='dark'] body {
-  color: #fff;
-  background: #121212;
+// [data-theme='dark'],
+// [data-theme='dark'] body {
+//   color: #fff;
+//   background: #121212;
 
-  header {
-    background: #121212;
+//   header {
+//     background: #121212;
 
-    nav {
-      a,
-      select {
-        color: #fff;
-      }
+//     nav {
+//       a,
+//       select {
+//         color: #fff;
+//       }
 
-      select,
-      button {
-        &:hover {
-          border: 1px solid #fff;
-        }
-      }
-    }
-  }
+//       select,
+//       button {
+//         &:hover {
+//           border: 1px solid #fff;
+//         }
+//       }
+//     }
+//   }
 
-  a {
-    color: lightpink;
+//   a {
+//     color: lightpink;
 
-    &:hover {
-      background: #fff;
-      color: #121212;
-    }
-  }
+//     &:hover {
+//       background: #fff;
+//       color: #121212;
+//     }
+//   }
 
-  .heading-container {
-    a {
-      color: #fff;
+//   .heading-container {
+//     a {
+//       color: #fff;
 
-      &:hover {
-        background: #fff;
-        color: #000;
-      }
-    }
-  }
+//       &:hover {
+//         background: #fff;
+//         color: #000;
+//       }
+//     }
+//   }
 
-  #figma-icon {
-    background-image: url('/icons/figma-light.svg') !important;
-  }
-  #safari-icon {
-    background-image: url('/icons/safari-light.svg') !important;
-  }
-  #email-icon {
-    background-image: url('/icons/email-light.svg') !important;
-  }
-  #linkedin-icon {
-    background-image: url('/icons/linkedin-light.svg') !important;
-  }
-  #twitter-icon {
-    background-image: url('/icons/twitter-light.svg') !important;
-  }
-  #github-icon {
-    background-image: url('/icons/github-light.svg') !important;
-  }
-  #fontawesome-icon {
-    background-image: url('/icons/fontawesome-light.svg') !important;
-  }
+//   #figma-icon {
+//     background-image: url('/icons/figma-light.svg') !important;
+//   }
+//   #safari-icon {
+//     background-image: url('/icons/safari-light.svg') !important;
+//   }
+//   #email-icon {
+//     background-image: url('/icons/email-light.svg') !important;
+//   }
+//   #linkedin-icon {
+//     background-image: url('/icons/linkedin-light.svg') !important;
+//   }
+//   #twitter-icon {
+//     background-image: url('/icons/twitter-light.svg') !important;
+//   }
+//   #github-icon {
+//     background-image: url('/icons/github-light.svg') !important;
+//   }
+//   #fontawesome-icon {
+//     background-image: url('/icons/fontawesome-light.svg') !important;
+//   }
 
-  #contact-container {
-    button,
-    input,
-    textarea {
-      filter: invert(1);
-    }
-  }
-}
+//   #contact-container {
+//     button,
+//     input,
+//     textarea {
+//       filter: invert(1);
+//     }
+//   }
+// }
 
 // Skip link:
 
