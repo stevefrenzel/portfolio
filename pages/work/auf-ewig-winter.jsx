@@ -29,7 +29,7 @@ export default function AufEwigWinter() {
       <NextSeo
         title='Steve Frenzel - Web Developer | AUF EWIG WINTER'
         description='Website for german record label'
-        canonical={router.asPath}
+        // canonical={router.asPath}
         openGraph={{
           url: router.asPath,
           type: 'website',
