@@ -1,32 +1,29 @@
-# Portfolio Website
+# Web Developer Portfolio
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Other technologies used are [Sass](https://sass-lang.com/) and [GSAP](https://greensock.com/gsap/).
+Built with Next.js and Sass.
 
 ## To Do
 
-### High Priority 🚨
+- finish layout for project pages and add content (AEW, Portfolio, xkcd)
+- `Contact`: Make sure form is working and to get e-mail notification
+- Enable horizontal scrolling for image gallery
+- `Intro`: When enough space is available, picture and text are next to each other
 
-- [ ] Implement `References` component
-- [ ] Implement `Navigation` component
-- [ ] Add meta data for SEO
-- [ ] Choose color theme for pictures
-- [ ] If system language is not german, switch to english
-- [ ] Add fixed width and height to images to avoid CLS
-- [ ] Implement a11y best practices
+### MVP 🚨
 
-### Low Priority 🤷‍♂️
+- Add custom 404 page
 
-- [ ] Add toggle for Light & Dark Mode
-- [ ] Add animations with GSAP
-- [ ] Use ✌️ as logo (not sure about this)
-- [ ] Navigation disappears on scroll
-- [ ] Show active link in Navigation
-- [ ] Create "Back to top" button
-- [ ] Add alert when visiting external links
-- [ ] Show symbol for external links
-- [ ] Implement custome Fav Icon
+### Final version ✨
 
-### Complete ✅
+- `Work` (children): Display individual projects in reusable component
+- `Work` (parent): Generate pictures and links for project pages from JSON file and pass content as props to it
+- `Footer`: Date should be generated dynamically, loop through data set for social links
+- Add language detection - [Click here for more info](https://nextj-org/blog/next-10#internationalized-routing)
+- Add switch for light and dark mode
+- Switch profile picture depending on mode
+- Add repeating symbol / logo as subtle background texture
 
-- [x] Create Breakpoints for Mobile, Table & Desktop
-- [x] Use web.dev as design template
+### Build
+
+- Minify CSS and JavaScript for final build
+- Add Gulp to handle image optimization and Google Fonts

@@ -1,23 +1,42 @@
-import Head from 'next/head';
-
-import Navigation from '../components/Navigation';
-import Welcome from '../components/Welcome';
-import About from '../components/About';
-import Services from '../components/Services';
-import References from '../components/References';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+// Next.js
+import { useRouter } from 'next/router';
+// next-seo
+import { NextSeo } from 'next-seo';
+// Components
+import Header from '@components/Header';
+import Intro from '@components/Intro';
+import Work from '@components/Work';
+import About from '@components/About';
+import Contact from '@components/Contact';
+import Footer from '@components/Footer';
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
-      <Head>
-        <title>Steve Frenzel - Web Developer</title>
-      </Head>
-      <Welcome />
-      <About />
-      <Services />
-      <Contact />
+      <NextSeo
+        title='Steve Frenzel - Web Developer'
+        description='Web developer focused on frontend, accessibility, SEO and performance'
+        canonical={router.asPath}
+        openGraph={{
+          url: router.asPath,
+          type: 'website',
+          title: 'Steve Frenzel - Web Developer',
+          description:
+            'Web developer focused on frontend, accessibility, SEO and performance',
+          locale: router.locale,
+          site_name: 'stevefrenzel.dev',
+        }}
+        twitter={{ site: '@stvfrnzl', handle: '@stvfrnzl' }}
+      />
+      <a href='#main'>Skip to main content</a>
+      <Header />
+      <Intro />
+      <main id='main' tabIndex='-1'>
+        <Work />
+        <About />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

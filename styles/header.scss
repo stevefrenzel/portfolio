@@ -1,0 +1,57 @@
+header {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+
+  nav {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 5%;
+
+    .flex-item {
+      flex: 1;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+
+      &:visited,
+      &:link {
+        color: #000;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+      }
+    }
+
+    select,
+    button {
+      appearance: none;
+      background: none;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 0 1%;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+
+    button {
+      margin-right: 3%;
+    }
+  }
+}

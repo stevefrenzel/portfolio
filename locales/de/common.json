@@ -1,0 +1,30 @@
+{
+  "intro": "Ich bin Absolvent der <1 href='https://www.spiced-academy.com/' rel='noopener noreferrer'>Spiced Academy</1> und arbeite derzeit bei der <2 href='https://www.nexum.de/' rel='noopener noreferrer'>nexum AG</2>, wo ich unter anderem an Projekten für <3 href='https://www.svti.ch/' rel='noopener noreferrer'>SVTI</3>, <4 href='https://www.mobiliar.ch/' rel='noopener noreferrer'>die mobiliar</4> und <5 href='https://www.niessing.com/' rel='noopener noreferrer'>Niessing</5> beteiligt war. Ich habe Spaß daran, leicht zugängliche und benutzbare Websites und Apps zu erstellen.",
+  "headings": {
+    "intro": "Web Entwickler",
+    "work": "Referenzen",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "content": {
+    "intro": "<0>Ich bin Absolvent der <1>Spiced Academy</1> und arbeite derzeit bei der <2>nexum AG</2>, wo ich unter anderem an Projekten für <3>SVTI</3>, <4>die mobiliar</4> und <5>Niessing</5> beteiligt war. Ich habe Spaß daran, leicht zugängliche und benutzbare Websites und Apps zu erstellen.</0>",
+    "work": "Hier findest du eine Auswahl von Projekten, an denen ich vor kurzem gearbeitet habe. Klicke auf das Bild, um mehr zu erfahren!",
+    "about": {
+      "p-1": "Ich war allerdings nicht immer ein Web Entwickler. Ich habe auch über 10 Jahre Erfahrung in der Musikindustrie als Tontechniker, Produzent und Stagehand. In dieser Zeit habe ich viele verschiedene Menschen getroffen und gelernt, auf ihre individuellen Bedürfnisse einzugehen.",
+      "p-2": "Ich bilde mich ständig weiter, um entscheiden zu können, welche Technologie am besten zu einem Projekt passt. Das Ergebnis wird ein intuitives, leistungsstarkes und leicht zugängliches Produkt sein, welches aktuelle Best Practices der Entwicklung berücksichtigt. Dies sind einige der Technologien, mit denen ich vertraut bin:",
+      "p-3": "Um sicherzustellen, dass die Website / Applikation möglichst überall korrekt dargestellt wird und funktioniert, teste ich sie ausgiebig in folgenden Browsern:"
+    },
+    "contact": "Wenn du an einer Zusammenarbeit interessiert bist, würde ich mich freuen, von dir zu hören!"
+  },
+  "labels": {
+    "name": "Name (erforderlich)",
+    "email": "E-Mail (erforderlich)",
+    "message": "Nachricht (min. 20 Zeichen)"
+  },
+  "placeholders": {
+    "name": "Namen eingeben",
+    "email": "E-Mail eingeben",
+    "message": "Nachricht eingeben"
+  },
+  "submit-button": "Senden"
+}

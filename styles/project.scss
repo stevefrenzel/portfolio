@@ -1,0 +1,63 @@
+@mixin icon-settings {
+  background-repeat: no-repeat;
+  background-position: 1px;
+  padding-left: 1.9rem;
+}
+
+#project-container {
+  max-width: 40rem;
+  padding: 3rem 5% 0 5%;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  mark {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 0 3px;
+  }
+
+  #overview {
+    list-style-type: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    ul li {
+      list-style-type: square;
+    }
+  }
+
+  .icon-wrapper {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    li {
+      padding: 0;
+      margin: 1%;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #figma-icon {
+      background-image: url('/icons/figma.svg');
+      @include icon-settings();
+    }
+    #fontawesome-icon {
+      background-image: url('/icons/fontawesome.svg');
+      @include icon-settings();
+    }
+    #netlify-icon {
+      background-image: url('/icons/netlify.svg');
+      @include icon-settings();
+    }
+    #vue-icon {
+      background-image: url('/icons/vue-dot-js.svg');
+      @include icon-settings();
+    }
+  }
+}

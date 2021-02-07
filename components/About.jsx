@@ -1,29 +1,39 @@
+import useTranslation from 'next-translate/useTranslation';
+
 export default function About() {
+  const { t } = useTranslation('common');
+  const heading = t('headings.about');
+  const p1 = t('content.about.p-1');
+  const p2 = t('content.about.p-2');
+  const p3 = t('content.about.p-3');
+
   return (
-    <section id='main'>
-      <h2>About me</h2>
-      <img
-        src='/illustrations/web-developer.svg'
-        alt='Guy sitting on the floor in front of a laptop'
-      />
-      <p>
-        I was not always a web developer, though. I also have over{' '}
-        <mark>10 years experience</mark> in the music business as a sound
-        engineer, producer and stagehand.
-      </p>
-      <p>
-        Thanks to this time I learned a lot about people and how to work with
-        them. I have also learned to <mark>plan large and small projects</mark>{' '}
-        of all kinds, to execute them carefully and implement them successfully.
-      </p>
-      <p>
-        <mark>Translating your vision</mark> to your customers (or visitors) is
-        my main goal. In order to achieve this, I constantly educate myself to
-        be able to decide which technology will best fit your project. The
-        result will be an
-        <mark>intuitive, performant and easily accessible product</mark>, taking
-        current development best practices into account.
-      </p>
+    <section id='about-container'>
+      <div className='heading-container'>
+        <h2 id='about' tabIndex='-1'>
+          {heading}
+        </h2>
+        {/* <a href='#about' aria-label='Link to About heading'>
+          #
+        </a> */}
+      </div>
+      <p>{p1}</p>
+      <p>{p2}</p>
+      <ul>
+        <li id='html-icon'>HTML</li>
+        <li id='css-icon'>CSS</li>
+        <li id='javascript-icon'>JavaScript</li>
+        <li id='react-icon'>React</li>
+        <li id='vue-icon'>Vue.js</li>
+        <li id='figma-icon'>Figma</li>
+      </ul>
+      <p>{p3}</p>
+      <ul>
+        <li id='chrome-icon'>Google Chrome</li>
+        <li id='firefox-icon'>Firefox</li>
+        <li id='safari-icon'>Safari</li>
+        <li id='edge-icon'>Microsoft Edge</li>
+      </ul>
     </section>
   );
 }

@@ -1,34 +1,10 @@
-#contact {
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: auto;
-  margin-bottom: 60px;
+#contact-container {
+  max-width: 40rem;
+  padding: 0 5%;
+  margin: 0 auto 2rem auto;
 
-  @media only screen and (min-width: 992px) {
-    margin-bottom: 120px;
-  }
-
-  .wrapper {
-    width: 100%;
-  }
-
-  img {
-    width: 500px;
-    height: auto;
-    display: none;
-    margin: 130px 0 0 50px;
-    @media only screen and (min-width: 992px) {
-      display: none;
-      width: 400px;
-    }
-  }
-
-  fieldset {
-    appearance: none;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5px;
+  p {
+    margin-bottom: 1rem;
   }
 
   label,
@@ -36,45 +12,54 @@
     display: block;
   }
 
-  label,
-  input,
-  legend {
-    margin-bottom: 10px;
-  }
-
-  input,
-  textarea,
-  button {
-    appearance: none;
+  label {
+    margin-bottom: 0.5rem;
   }
 
   input,
   textarea {
     width: 100%;
-    // border: none;
-    border: 1px solid lightslategrey;
+    margin-bottom: 0.9rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    padding: 10px 20px;
-  }
+    padding: 10px;
+    transition: 0.2s ease-in-out;
 
-  input[type='text'],
-  input[type='email'] {
-    font-size: 1rem;
+    &:focus,
+    &:hover,
+    &:active {
+      cursor: pointer;
+      box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+      outline: none;
+      border: 1px solid #000;
+      transition: 0.2s ease-in-out;
+    }
   }
 
   textarea {
     resize: none;
-    font-size: 1rem;
   }
 
   button {
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    background: #000000;
     color: #ffffff;
-    background-color: #000000;
-    font-size: 1rem;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+    transition: 0.2s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
+      outline: none;
+      background: #fff;
+      color: #000;
+      transition: 0.2s ease-in-out;
+      box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+    }
   }
 }

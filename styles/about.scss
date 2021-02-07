@@ -1,25 +1,70 @@
-#main {
-  width: 100vw;
-  height: auto;
-  margin-bottom: 60px;
+@mixin icon-settings {
+  background-repeat: no-repeat;
+  background-position: 1px;
+  padding-left: 1.9rem;
+}
 
-  @media only screen and (min-width: 992px) {
-    margin-bottom: 120px;
+#about-container {
+  max-width: 40rem;
+  padding: 0 5%;
+  margin: 0 auto 2rem auto;
+
+  p {
+    margin: 1rem 0;
   }
 
-  img {
-    width: 250px;
-    height: auto;
-    float: right;
-    margin: 20px;
-    display: none;
-
-    @media only screen and (min-width: 768px) {
-      display: initial;
-    }
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 20rem;
   }
 
-  p:last-child {
-    margin-bottom: 0;
+  li {
+    margin: 15px;
+  }
+
+  #html-icon {
+    background-image: url('/icons/html5.svg');
+    @include icon-settings();
+  }
+  #css-icon {
+    background-image: url('/icons/css3.svg');
+    @include icon-settings();
+  }
+  #javascript-icon {
+    background-image: url('/icons/javascript.svg');
+    @include icon-settings();
+  }
+  #react-icon {
+    background-image: url('/icons/react.svg');
+    @include icon-settings();
+  }
+  #vue-icon {
+    background-image: url('/icons/vue-dot-js.svg');
+    @include icon-settings();
+  }
+  #figma-icon {
+    background-image: url('/icons/figma.svg');
+    @include icon-settings();
+  }
+  #chrome-icon {
+    background-image: url('/icons/chrome.svg');
+    @include icon-settings();
+  }
+  #firefox-icon {
+    background-image: url('/icons/firefox.svg');
+    @include icon-settings();
+  }
+  #safari-icon {
+    background-image: url('/icons/safari.svg');
+    @include icon-settings();
+  }
+  #edge-icon {
+    background-image: url('/icons/edge.svg');
+    @include icon-settings();
   }
 }

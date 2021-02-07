@@ -1,0 +1,40 @@
+#intro-wrapper {
+  margin: 3rem auto 1rem auto;
+  padding: 0 5%;
+  max-width: 40rem;
+
+  .image-and-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .image-wrapper {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  .heading-wrapper {
+    margin: 0 auto;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
