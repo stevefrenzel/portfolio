@@ -62,4 +62,23 @@
       box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
     }
   }
+
+  .error,
+  .success {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1%;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .error {
+    background: lightcoral;
+    box-shadow: 4px 4px 0px rgba(240, 128, 128, 0.5);
+  }
+
+  .success {
+    background: lightgreen;
+    box-shadow: 4px 4px 0px rgba(144, 238, 144, 0.5);
+  }
 }
