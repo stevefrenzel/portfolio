@@ -53,10 +53,7 @@ export default function Contact() {
       data: inputs,
     })
       .then((response) => {
-        handleServerResponse(
-          true,
-          'Thank you, your message has been submitted.'
-        );
+        handleServerResponse(true, `${success}`);
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error);
@@ -72,7 +69,10 @@ export default function Contact() {
   const placeholderEmail = t('placeholders.email');
   const labelMessage = t('labels.message');
   const placeholderMessage = t('placeholders.message');
-  const submitButton = t('submit-button');
+  const submit = t('submit-button.submit');
+  const submitted = t('submit-button.submitted');
+  const submitting = t('submit-button.submitting');
+  const success = t('submit-button.success');
 
   return (
     <section id='contact-container'>
@@ -121,13 +121,12 @@ export default function Contact() {
           required
           spellCheck
         ></textarea>
-        {/* <button type='submit'>{submitButton}</button> */}
         <button type='submit' disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
-              ? 'Submit'
-              : 'Submitted'
-            : 'Submitting...'}
+              ? `${submit}`
+              : `${submitted}`
+            : `${submitting}`}
         </button>
       </form>
       {status.info.error && <p className='error'>Error: {status.info.msg}</p>}
