@@ -25,5 +25,11 @@
     "email": "Enter e-mail",
     "message": "Enter message"
   },
-  "submit-button": "Submit"
+  "submit-button": {
+    "submit": "Submit",
+    "submitted": "Submitted",
+    "submitting": "submitting",
+    "success": "Thank you, your message has been submitted!"
+  },
+  "select-language": "Select language"
 }
