@@ -5,12 +5,14 @@ header {
   top: 0;
   width: 100%;
   z-index: 10;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  transition: top 0.3s;
 
   nav {
     display: flex;
     align-items: center;
-    height: 2rem;
+    height: 3rem;
     max-width: 40rem;
     margin: 0 auto;
     padding: 0 5%;

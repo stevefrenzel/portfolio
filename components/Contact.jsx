@@ -80,9 +80,11 @@ export default function Contact() {
         <h2 id='contact' tabIndex='-1'>
           {heading}
         </h2>
-        {/* <a href='#contact' aria-label='Link to Contact heading'>
-          #
-        </a> */}
+        <a href='#contact' aria-label='Link to Contact heading'>
+          <span role='img' aria-label='link symbol'>
+            🔗
+          </span>
+        </a>
       </div>
       <p>{description}</p>
       <form onSubmit={handleOnSubmit}>
