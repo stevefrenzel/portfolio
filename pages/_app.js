@@ -1,5 +1,5 @@
 // next-theme
-import { ThemeProvider } from 'next-themes';
+// import { ThemeProvider } from 'next-themes';
 // CSS
 import '@styles/globals.scss';
 import '@styles/reset.css';
@@ -13,11 +13,7 @@ import '@styles/contact.scss';
 import '@styles/footer.scss';
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ThemeProvider defaultTheme='system'>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
