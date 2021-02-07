@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes';
 
 export default function Header() {
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   const onSelectChange = (e) => {
     const locale = e.target.value;
     router.push(router.asPath, router.asPath, {
@@ -22,7 +22,7 @@ export default function Header() {
 
         <div className='flex-item'></div>
 
-        <button
+        {/* <button
           aria-label='Button to switch themes'
           type='button'
           onClick={
@@ -34,7 +34,7 @@ export default function Header() {
           }
         >
           {theme === 'light' ? '🌞' : theme === 'dark' ? '🌚 ' : null}
-        </button>
+        </button> */}
 
         <select name='languages' id='language-select' onChange={onSelectChange}>
           {router.locales.map((language) => (
