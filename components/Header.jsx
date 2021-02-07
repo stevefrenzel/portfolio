@@ -32,7 +32,7 @@ export default function Header() {
         <label
           htmlFor='language-select'
           className='visually-hidden'
-          aria-labelledby={labelLanguage}
+          aria-labelledby='language-select'
         >
           {labelLanguage}
         </label>
