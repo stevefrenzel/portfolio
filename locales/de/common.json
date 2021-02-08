@@ -32,5 +32,10 @@
     "submitting": "Wird gesendet...",
     "success": "Vielen Dank, deine Nachricht wurde verschickt!"
   },
-  "select-language": "Sprache auswählen"
+  "select-language": "Sprache auswählen",
+  "error": {
+    "title": "Seite nicht gefunden",
+    "description": "Anscheinend ist etwas schiefgelaufen.",
+    "link": "<< Zurück"
+  }
 }
