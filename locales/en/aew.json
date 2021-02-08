@@ -8,6 +8,7 @@
     "conclusion": "Conclusion"
   },
   "overview": {
+    "short": "Website for german record label",
     "p-1": "<0>Together with three friends I founded the record company <1>AUF EWIG WINTER</1> at the end of 2019, which serves as a place to collect all information about our artists from the fields of metal, lo-fi and hip hop / rap. Since we needed our own website and email address in addition to the usual social media presences for a professional outward appearance, I took care of the implementation. At that time I was working a lot with <2>Vue.js</2>, which is why I chose this technology, also because it offered routing possibilities, as well as integrated CSS animations.</0>"
   },
   "purpose-and-goal": {
