@@ -162,11 +162,11 @@ a:active,
 a:focus {
   background: #000;
   color: #fff;
-  border-radius: 5px;
+  // border-radius: 5px;
   outline: none;
   transition: 0.2s ease-in-out;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 5px;
+  // padding: 0 5px;
 }
 
 .heading-container {
@@ -200,12 +200,6 @@ a:focus {
     &:visited {
       color: #000;
     }
-
-    // &:hover,
-    // &:active,
-    // &:focus {
-    //   color: #fff;
-    // }
   }
 }
 

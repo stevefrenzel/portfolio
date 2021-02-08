@@ -9,6 +9,7 @@ import '@styles/project.scss';
 import '@styles/about.scss';
 import '@styles/contact.scss';
 import '@styles/footer.scss';
+import '@styles/error.scss';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
