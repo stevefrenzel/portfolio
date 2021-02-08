@@ -69,7 +69,9 @@ export default function Xkcd() {
           </a>
         </div>
         <ul id='overview'>
-          <li>{description}</li>
+          <li>
+            <strong>{description}</strong>
+          </li>
           <ul>
             <li>{bp1}</li>
           </ul>

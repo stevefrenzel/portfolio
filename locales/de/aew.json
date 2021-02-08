@@ -8,6 +8,7 @@
     "conclusion": "Fazit"
   },
   "overview": {
+    "short": "Website für deutsche Plattenfirma",
     "p-1": "<0>Zusammen mit drei Freunden habe ich Ende 2019 die Plattenfirma <1>AUF EWIG WINTER</1> gegründet, welche als Sammelstelle für alle Informationen zu unseren Künstlern aus den Bereichen Metal, Lo-Fi und Hip Hop / Rap dient. Da wir für eine professionelle Außenwirkung neben den üblichen Social Media Präsenzen auch eine eigene Website und E-Mail Adresse benötigten, habe ich mich um die Umsetzung gekümmert. Zu diesem Zeitpunkt habe ich mich viel mit <2>Vue.js</2> beschäftigt, weshalb ich diese Technologie gewählt habe. Unter anderem auch, weil es von sich aus bereits Möglichkeiten zum Routing, sowie integrierte Animationen CSS-Animationen anbot.</0>"
   },
   "purpose-and-goal": {

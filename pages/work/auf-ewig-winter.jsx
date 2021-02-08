@@ -14,15 +14,22 @@ export default function AufEwigWinter() {
   const Paragraph = (props) => <p {...props} />;
   const BulletPoint = (props) => <li {...props} />;
   const { t } = useTranslation('aew');
+  // Headings
+  const description = t('headings.description');
+  const technologies = t('headings.technologies');
   const purposeAndGoal = t('headings.purpose-and-goal');
   const techStack = t('headings.tech-stack');
   const challengesAndProblems = t('headings.challenges-and-problems');
   const conclusion = t('headings.conclusion');
+  // Paragraphs
   const p7 = t('challenges-and-problems.p-7');
+  // Bulletpoints
   const bp2 = t('conclusion.bullet-points.bp-2');
   const bp3 = t('conclusion.bullet-points.bp-3');
   const bp5 = t('conclusion.bullet-points.bp-5');
   const bp6 = t('conclusion.bullet-points.bp-6');
+  // Misc
+  const short = t('overview.short');
 
   return (
     <>
@@ -61,11 +68,13 @@ export default function AufEwigWinter() {
           </a>
         </div>
         <ul id='overview'>
-          <li>Description</li>
+          <li>
+            <strong>{description}</strong>
+          </li>
           <ul>
-            <li>Website for german record label</li>
+            <li>{short}</li>
           </ul>
-          <li>Technologies</li>
+          <li>{technologies}</li>
           <ul>
             <li>
               <a href='https://www.figma.com/' rel='noopener noreferrer'>
