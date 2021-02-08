@@ -31,5 +31,10 @@
     "submitting": "submitting",
     "success": "Thank you, your message has been submitted!"
   },
-  "select-language": "Select language"
+  "select-language": "Select language",
+  "error": {
+    "title": "Page not found",
+    "description": "Seems like something went wrong.",
+    "link": "<< Go back"
+  }
 }
