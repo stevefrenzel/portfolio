@@ -8,8 +8,21 @@
   }
 
   ul {
+    margin: 0;
+    padding: 0;
+    background: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
     li {
-      list-style-type: square;
+      background: lightgreen;
+      list-style-type: none;
+
+      a {
+        background: #000;
+        color: #fff;
+      }
     }
   }
 }
