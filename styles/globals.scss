@@ -39,6 +39,15 @@ body {
   background: #fff;
 }
 
+* {
+  color: inherit;
+}
+
+// img,
+// .icon {
+//   filter: invert(100%);
+// }
+
 // Dark mode properties:
 
 // [data-theme='dark'],
@@ -162,11 +171,9 @@ a:active,
 a:focus {
   background: #000;
   color: #fff;
-  // border-radius: 5px;
   outline: none;
   transition: 0.2s ease-in-out;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-  // padding: 0 5px;
 }
 
 .heading-container {
@@ -196,9 +203,14 @@ a:focus {
   a {
     padding: 0 1%;
     text-decoration: none;
+    right: 100%;
+    position: relative;
     &:link,
     &:visited {
       color: #000;
+    }
+    &:focus {
+      right: auto;
     }
   }
 }
