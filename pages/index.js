@@ -29,13 +29,13 @@ export default function Home() {
           site_name: 'stevefrenzel.dev',
           images: [
             {
-              url: 'https://www.stevefrenzel.dev/img/open-graph-min.jpg',
+              url: 'https://stevefrenzel.dev/img/open-graph-min.jpg',
               width: 1200,
               height: 630,
               alt: 'Steve Frenzel - Web Developer',
             },
             {
-              url: 'https://www.stevefrenzel.dev/img/twitter-min.jpg',
+              url: 'https://stevefrenzel.dev/img/twitter-min.jpg',
               width: 1024,
               height: 512,
               alt: 'Steve Frenzel - Web Developer',
