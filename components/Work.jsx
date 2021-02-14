@@ -22,23 +22,25 @@ export default function Work() {
       </div>
       <p>{description}</p>
 
-      <ul>
-        <li>
-          <Link href='/work/auf-ewig-winter'>
-            <a>AUF EWIG WINTER</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/work/xkcd'>
-            <a>xkcd </a>
-          </Link>
-        </li>
-        {/* <li>
-          <Link href='/work/portfolio-website' scroll={false}>
-            <a>Portfolio website</a>
-          </Link>
-        </li> */}
-      </ul>
+      <div className='flex-wrapper'>
+        <ul>
+          <li id='vue-icon'>
+            <Link href='/work/auf-ewig-winter'>
+              <a>AUF EWIG WINTER</a>
+            </Link>
+          </li>
+          <li id='figma-icon'>
+            <Link href='/work/xkcd'>
+              <a>xkcd</a>
+            </Link>
+          </li>
+          {/* <li id='nextjs-icon'>
+            <Link href='/work/portfolio-website' scroll={false}>
+              <a>Portfolio website</a>
+            </Link>
+          </li> */}
+        </ul>
+      </div>
     </section>
   );
 }
