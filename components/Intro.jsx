@@ -7,6 +7,9 @@ import Trans from 'next-translate/Trans';
 export default function Intro() {
   const { t } = useTranslation('common');
   const jobTitle = t('headings.intro');
+  const disclaimer = t('content.disclaimer');
+  const bp1 = t('bullet-points.bp-1');
+  const bp2 = t('bullet-points.bp-2');
   const Component = (props) => <p {...props} />;
   return (
     <section id='intro-wrapper'>
@@ -43,6 +46,15 @@ export default function Intro() {
           <a href='https://niessing.com/' rel='noopener noreferrer' />,
         ]}
       />
+
+      <article>
+        <p>⚠️ {disclaimer}</p>
+        <ul>
+          <li>Theme Switch</li>
+          <li>{bp1}</li>
+          <li>{bp2}</li>
+        </ul>
+      </article>
     </section>
   );
 }

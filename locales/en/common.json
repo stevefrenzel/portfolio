@@ -7,7 +7,8 @@
   },
   "content": {
     "intro": "<0>I am a <1>Spiced Academy</1> graduate and currently work for <2>nexum AG</2>, where I have been involved on projects for <3>SVTI</3>, <4>die mobiliar</4> and <5>Niessing</5>, among others. I enjoy creating easily accessible and usable websites and apps.</0>",
-    "work": "Here you can find a selection of projects I have worked on recently. Click on the link to learn more!",
+    "disclaimer": "This is not the final version of the website. Whenever I have time, I will continue to work on it and add more features, like the following:",
+    "work": "Here you can find a selection of projects I have worked on recently. Click on the image to learn more!",
     "about": {
       "p-1": "I was not always a web developer, though. I also have over 10 years experience in the music industry as a sound engineer, producer and stagehand. During this time I met many different people and learned to respond to their individual needs.",
       "p-2": "I constantly educate myself to be able to decide which technology will best fit a project. The result will be an intuitive, performant and easily accessible product, taking current development best practices into account. These are some of the technologies I am familiar with:",
@@ -36,5 +37,9 @@
     "title": "Page not found",
     "description": "Seems like something went wrong.",
     "link": "<< Go back"
+  },
+  "bullet-points": {
+    "bp-1": "Animations",
+    "bp-2": "Work: Image cards instead of links, more pictures in articles, code examples"
   }
 }
