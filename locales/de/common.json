@@ -8,6 +8,7 @@
   },
   "content": {
     "intro": "<0>Ich bin Absolvent der <1>Spiced Academy</1> und arbeite derzeit bei der <2>nexum AG</2>, wo ich unter anderem an Projekten für <3>SVTI</3>, <4>die mobiliar</4> und <5>Niessing</5> beteiligt war. Ich habe Spaß daran, leicht zugängliche und benutzbare Websites und Apps zu erstellen.</0>",
+    "disclaimer": "Dies ist nicht die finale Version der Website. Wann immer ich Zeit habe, arbeite ich daran weiter und füge neue Dinge hinzu, zum Beispiel:",
     "work": "Hier findest du eine Auswahl von Projekten, an denen ich vor kurzem gearbeitet habe. Klicke auf das Bild, um mehr zu erfahren!",
     "about": {
       "p-1": "Ich war allerdings nicht immer ein Web Entwickler. Ich habe auch über 10 Jahre Erfahrung in der Musikindustrie als Tontechniker, Produzent und Stagehand. In dieser Zeit habe ich viele verschiedene Menschen getroffen und gelernt, auf ihre individuellen Bedürfnisse einzugehen.",
@@ -37,5 +38,9 @@
     "title": "Seite nicht gefunden",
     "description": "Anscheinend ist etwas schiefgelaufen.",
     "link": "<< Zurück"
+  },
+  "bullet-points": {
+    "bp-1": "Animationen",
+    "bp-2": "Referenzen: Bildkarten anstelle von Links, mehr Bilder in Artikeln, Code-Beispiele"
   }
 }
