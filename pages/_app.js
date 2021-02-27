@@ -47,6 +47,38 @@ function MyApp({ Component, pageProps }) {
           content='/favicons/browserconfig.xml'
         />
         <meta name='theme-color' content='#ffffff' />
+        <link rel='canonical' href='https://stevefrenzel.dev/' />
+        <title>Steve Frenzel - Web Developer</title>
+        <meta name='robots' content='follow, index' />
+        <meta
+          name='description'
+          content='Web developer focused on frontend, accessibility, SEO and performance'
+        />
+        {/* Open Graph */}
+        <meta property='og:url' content='https://stevefrenzel.dev/' />
+        <meta property='og:type' content='website' />
+        <meta property='og:site_name' content='Steve Frenzel' />
+        <meta
+          property='og:description'
+          content='Web developer focused on frontend, accessibility, SEO and performance'
+        />
+        <meta property='og:title' content='Steve Frenzel - Web Developer' />
+        <meta
+          property='og:image'
+          content='https://stevefrenzel.dev/img/open-graph-min.jpg'
+        />
+        {/* Twitter */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@stvfrnzl' />
+        <meta name='twitter:title' content='Steve Frenzel - Web Developer' />
+        <meta
+          name='twitter:description'
+          content='Web developer focused on frontend, accessibility, SEO and performance'
+        />
+        <meta
+          name='twitter:image'
+          content='https://stevefrenzel.dev/img/twitter-min.jpg'
+        />
       </Head>
       <Component {...pageProps} />
     </>
