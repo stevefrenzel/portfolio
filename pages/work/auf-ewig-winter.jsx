@@ -1,8 +1,7 @@
 // Next.js
+import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-// next-seo
-import { NextSeo } from 'next-seo';
 // i18n
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
@@ -33,20 +32,10 @@ export default function AufEwigWinter() {
 
   return (
     <>
-      <NextSeo
-        title='Steve Frenzel - Web Developer | AUF EWIG WINTER'
-        description='Website for german record label'
-        // canonical={router.asPath}
-        openGraph={{
-          url: router.asPath,
-          type: 'website',
-          title: 'Steve Frenzel - Web Developer | AUF EWIG WINTER',
-          description: 'Website for german record label',
-          locale: router.locale,
-          site_name: 'stevefrenzel.dev',
-        }}
-        twitter={{ site: '@stvfrnzl', handle: '@stvfrnzl' }}
-      />
+      <Head>
+        <title>Steve Frenzel - Web Developer | AUF EWIG WINTER</title>
+        <meta name='description' content='Website for german record label' />
+      </Head>
       <a href='#main'>Skip to main content</a>
       <Header />
       <div id='project-container'>
