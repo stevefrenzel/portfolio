@@ -1,8 +1,7 @@
 // Next.js
+import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-// next-seo
-import { NextSeo } from 'next-seo';
 // i18n
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
@@ -34,20 +33,13 @@ export default function Xkcd() {
 
   return (
     <>
-      <NextSeo
-        title='Steve Frenzel - Web Developer | xkcd'
-        description='Redesign of xkcd website with Figma'
-        // canonical={router.asPath}
-        openGraph={{
-          url: router.asPath,
-          type: 'website',
-          title: 'Steve Frenzel - Web Developer | xkcd',
-          description: 'Redesign of xkcd website with Figma',
-          locale: router.locale,
-          site_name: 'stevefrenzel.dev',
-        }}
-        twitter={{ site: '@stvfrnzl', handle: '@stvfrnzl' }}
-      />
+      <Head>
+        <title>Steve Frenzel - Web Developer | xkcd</title>
+        <meta
+          name='description'
+          content='Redesign of xkcd website with Figma'
+        />
+      </Head>
       <a href='#main'>Skip to main content</a>
       <Header />
       <div id='project-container'>
