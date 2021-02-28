@@ -14,18 +14,17 @@
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Open Sans';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/open-sans-v18-latin-regular.eot');
+  src: url('/fonts/work-sans-v9-latin-regular.eot');
   src: local(''),
-    url('/fonts/open-sans-v18-latin-regular.eot?#iefix')
+    url('/fonts/work-sans-v9-latin-regular.eot?#iefix')
       format('embedded-opentype'),
-    url('/fonts/open-sans-v18-latin-regular.woff2') format('woff2'),
-    url('/fonts/open-sans-v18-latin-regular.woff') format('woff'),
-    url('/fonts/open-sans-v18-latin-regular.ttf') format('truetype'),
-    url('/fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg');
+    url('/fonts/work-sans-v9-latin-regular.woff2') format('woff2'),
+    url('/fonts/work-sans-v9-latin-regular.woff') format('woff'),
+    url('/fonts/work-sans-v9-latin-regular.ttf') format('truetype'),
+    url('/fonts/work-sans-v9-latin-regular.svg#WorkSans') format('svg');
 }
 
 html {
@@ -143,8 +142,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
 }
 
 h1 {
