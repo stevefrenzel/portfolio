@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
         <meta property='og:title' content='Steve Frenzel - Web Developer' />
         <meta
           property='og:image'
-          content='https://stevefrenzel.dev/img/banner-min.jpg'
+          content='https://stevefrenzel.dev/img/seo-banner.jpeg'
         />
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
@@ -77,7 +77,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name='twitter:image'
-          content='https://stevefrenzel.dev/img/banner-min.jpg'
+          content='https://stevefrenzel.dev/img/seo-banner.jpeg'
         />
       </Head>
       <Component {...pageProps} />
