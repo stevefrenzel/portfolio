@@ -65,8 +65,15 @@ function MyApp({ Component, pageProps }) {
         <meta property='og:title' content='Steve Frenzel - Web Developer' />
         <meta
           property='og:image'
-          content='https://stevefrenzel.dev/img/seo-banner.jpeg'
+          content='https://stevefrenzel.dev/img/seo-banner.png'
         />
+        <meta property='og:image:width' content='1600' />
+        <meta property='og:image:height' content='882' />
+        <meta
+          property='og:image:alt'
+          content='Picture of web developer Steve Frenzel'
+        />
+        <meta property='og:image:type' content='image/png' />
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@stvfrnzl' />
@@ -77,7 +84,11 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name='twitter:image'
-          content='https://stevefrenzel.dev/img/seo-banner.jpeg'
+          content='https://stevefrenzel.dev/img/seo-banner.png'
+        />
+        <meta
+          name='twitter:image:alt'
+          content='Picture of web developer Steve Frenzel'
         />
       </Head>
       <Component {...pageProps} />
