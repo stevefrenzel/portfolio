@@ -62,13 +62,13 @@ export default function Home() {
           property='og:image'
           content='https://stevefrenzel.dev/img/seo-banner.png'
         />
-        {/* <meta property='og:image:width' content='1600' />
+        <meta property='og:image:width' content='1600' />
         <meta property='og:image:height' content='882' />
         <meta
           property='og:image:alt'
           content='Picture of web developer Steve Frenzel'
         />
-        <meta property='og:image:type' content='image/png' /> */}
+        <meta property='og:image:type' content='image/png' />
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@stvfrnzl' />
@@ -81,10 +81,10 @@ export default function Home() {
           name='twitter:image'
           content='https://stevefrenzel.dev/img/seo-banner.png'
         />
-        {/* <meta
+        <meta
           name='twitter:image:alt'
           content='Picture of web developer Steve Frenzel'
-        /> */}
+        />
       </Head>
       <a href='#main'>Skip to main content</a>
       <Header />
