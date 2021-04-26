@@ -42,7 +42,6 @@ export default function Intro() {
           />,
           <a href='https://www.nexum.de/' rel='noopener noreferrer' />,
           <a href='https://www.svti.ch/' rel='noopener noreferrer' />,
-          <a href='https://www.mobiliar.ch/' rel='noopener noreferrer' />,
           <a href='https://niessing.com/' rel='noopener noreferrer' />,
         ]}
       />
